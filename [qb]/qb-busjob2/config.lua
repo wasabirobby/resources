@@ -1,5 +1,5 @@
 Config = Config or {}
-
+ 
 Config.AllowedVehicles = {
     [1] = {model = "bus", label = Lang:t('info.bus')},
 }
