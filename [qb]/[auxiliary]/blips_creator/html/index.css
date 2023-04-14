@@ -1,0 +1,121 @@
+* {
+    user-select:none;
+}
+
+/* Main blip container */
+.big-container {
+    position: absolute;
+    left:25vw;
+    top: 25vh;
+
+    width: 50vw !important;
+    height: 50vh !important;
+
+    background-color: #222;
+
+    border-radius: 1vh;
+    overflow-y: auto;
+
+    color: #999;
+
+    display: none;
+}
+
+/* Edit blip container */
+.little-container {
+    position: absolute;
+    right: 1vw;
+    top: 25vh;
+
+    width: 20vw !important;
+    height: 50vh !important;
+
+    background-color: #222;
+
+    border-radius: 1vh;
+    overflow-y: auto;
+
+    display: none;
+
+    color: #999;
+}
+
+#blip-sprites {
+    position: absolute;
+    left:25vw;
+
+    width: 50vw;
+    height: 20vh;
+
+    overflow-y: scroll;
+
+    background-color: #222;
+
+    display: none;
+}
+
+#blips-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    border-radius: 1vw;
+}
+
+.blip {
+    transition-duration: 100ms;
+}
+
+.blip:hover {
+    background-color: #333;
+}
+
+.blip-sprite {
+    transition-duration: 100ms;
+}
+
+.blip-sprite:hover {
+    transform: scale(0.9);
+}
+
+.blip-sprite:not(:hover) {
+    transform: scale(1.0);
+}
+
+#edit-blip-sprite {
+    transition-duration: 200ms;
+}
+
+#edit-blip-sprite:hover {
+    transform: scale(0.8);
+}
+
+#edit-blip-sprite:not(:hover) {
+    transform: scale(1.0);
+}
+
+.blip-color {
+    width: 1.5vw;
+    height: 1.5vw;
+
+    transition-duration: 100ms;
+}
+
+.blip-color:hover{
+    transform: scale(0.9);
+}
+
+.blip-color:not(:hover){
+    transform: scale(1.0);
+}
+
+.icon-hoverable {
+    transition-duration: 100ms;
+}
+
+.icon-hoverable:hover {
+    transform: scale(0.9);
+}
+
+.icon-hoverable:not(:hover) {
+    transform: scale(1.0);
+}

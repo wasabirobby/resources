@@ -1,0 +1,2907 @@
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Thin.ttf") format("truetype");
+  font-weight: 100
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Light.ttf") format("truetype");
+  font-weight: 200
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Middle.ttf") format("truetype");
+  font-weight: 300
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Italic.ttf") format("truetype");
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Bold.ttf") format("truetype");
+  font-weight: 700
+}
+
+
+body {
+  margin: 0;
+  display: none;
+  /* font-family: "Bebas Nue", sans-serif; */
+  background: linear-gradient(to right, #0000007d, #16346a, #19423f7d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
+}
+
+
+
+.kutular {
+  width: -webkit-fill-available;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+
+
+
+.kutu {
+  float: left;
+  width: 230px;
+  border: 3px solid #0095ffa1;
+  height: 250px;
+  margin-left: 2%;
+  margin-top: 10px;
+  position: relative;
+  background: linear-gradient(45deg, #00e7ff5c, #19ffea00);
+
+}
+
+.kutu span {
+  color: white;
+  width: -webkit-fill-available;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
+
+.w-vulcan-v2-button,
+.w-vulcan-button-wrapper,
+.w-bottom-bar {
+  display: none !important;
+}
+
+.kutu a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #4273bb, #00c4ff);
+  margin-left: 3%;
+  position: absolute;
+  bottom: 7px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.cases {
+  position: relative;
+  width: 70%;
+  height: 600px;
+  place-items: center;
+  background: linear-gradient(45deg, rgb(16 16 16), rgb(21 32 41));
+  padding: 20px;
+  margin: 10% auto auto;
+  border-radius: 10px;
+
+}
+
+
+.container {
+  display: none;
+  /* display: grid; */
+  position: relative;
+  place-items: center;
+  background: linear-gradient(45deg, rgb(16, 16, 16), rgb(21, 32, 41));
+  width: 70%;
+  height: 600px;
+  padding: 20px;
+
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+
+.spinner,
+.spinner__won {
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.spinner {
+  max-width: 610px;
+  min-width: 610px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.spinner__won {
+  max-width: 590px;
+  min-width: 590px;
+  padding: 3px 10px;
+  font-size: 24px;
+  letter-spacing: 12px;
+}
+
+.spinner-items {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  margin-left: -246px;
+}
+
+.spinner__marker {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: yellow;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.spinner-items__item {
+  display: block;
+  list-style-type: none;
+  padding: 0px 0;
+  font-size: 32px;
+  color: #c2c2c2;
+  border-left: 5px solid black;
+  width: 117px;
+  max-width: 117px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button {
+  padding: 21px 46px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background-color: #242424;
+  color: white;
+  transition: box-shadow 300ms ease;
+  margin-left: 15px;
+  text-align: center;
+  float: left;
+  display: block;
+}
+
+.button:hover {
+  box-shadow: 0px 2.5px 3.5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.win {
+  background-color: #ffe500;
+  box-shadow: 0px 0px 20px 20px #ffff0061;
+}
+
+
+#startSpinner {
+  font-weight: 600;
+  background: linear-gradient(45deg, #fff700, #ffeb00);
+  color: black;
+}
+
+
+.coinhesap {
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  color: yellow;
+  text-shadow: 0px 0px 20px yellow;
+  font-size: 26px;
+}
+
+
+.kazanilan {
+  display: none;
+  width: 50%;
+  height: 85%;
+  background: url(gif.gif);
+  background-size: cover;
+  position: absolute;
+  border-radius: 22px;
+}
+
+.btn {
+
+  text-decoration: none;
+  background: linear-gradient(45deg, #fff700, #d2a21d);
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  box-shadow: 0px 0px 20px 0px yellow;
+  color: black;
+  font-weight: 600;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #070e2917;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #040817;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+theme2 {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: url(../bg.png);
+  background-size: cover;
+}
+
+
+
+
+.vidcont img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 501;
+}
+
+.vidcont h1 {
+  position: absolute;
+  top: 12vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 501;
+  font-size: 3.5vw;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 4px white;
+}
+
+.vidcont p {
+  position: absolute;
+  top: 17vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 501;
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 4px white;
+}
+
+button {
+  position: absolute;
+  top: 33vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 501;
+  font-size: 1.3vw;
+  color: black;
+  text-shadow: 0px 0px 17px black;
+  text-align: center;
+  background: #ffca4a;
+  border-radius: 30px;
+  border: 0px;
+  padding: 5px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 10px #ffca4a;
+  padding-right: 15px;
+  font-family: 'Bebas Nue';
+  letter-spacing: 0.2vw;
+}
+
+
+
+.shw a {
+  text-decoration: none;
+  position: absolute;
+  top: 35vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  border-radius: 30px;
+  background: #ffca4a;
+  color: black;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 29px;
+  padding-top: .7vh;
+  padding-bottom: .7vh;
+  margin-top: 16px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+
+.shw {
+  display: none;
+}
+
+.ust {
+  position: absolute;
+  left: 5vw;
+  top: 5vh;
+}
+
+.sagust {
+  position: absolute;
+  right: 5vw;
+  top: 8vh;
+}
+
+.sagust i {
+  margin-right: 10px;
+  color: #a67ada;
+  text-shadow: 0px 0px 4px #a67ada;
+}
+
+.sagust b {
+  color: black;
+}
+
+.sagust span {
+  color: white;
+  border: 0.1vw solid;
+  padding-left: 0.3vw;
+  padding-right: 1vw;
+  font-size: 24px;
+  padding-bottom: 0.3vh;
+  background: white;
+  padding-top: 0.3vh;
+  border-radius: 0.3vw;
+}
+
+.ust span {
+  color: white;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-bottom: 2px solid;
+  text-shadow: 0px 0px 20px white;
+}
+
+
+.garanti {
+  position: relative;
+  color: white;
+  margin-left: 2.5vw;
+  border: 1px solid;
+  width: 5.5vw;
+  height: 10.5vh;
+  float: left;
+}
+
+.incaseitems {
+  position: relative;
+  color: white;
+  margin-left: 2.5vw;
+  border: 1px solid;
+  width: 5.5vw;
+  height: 10.5vh;
+  float: left;
+  margin-top: 1vw;
+}
+
+.incaseitems img {
+  /* padding: 10%;
+  width: 80%; */
+  padding: 0.5vw;
+  width: 4.2vw;
+}
+
+#boxs {
+  position: relative;
+  left: 5vw;
+  top: 12vh;
+  width: 50%;
+  height: 80%;
+  float: left;
+  overflow-y: scroll;
+  margin-right: 20px;
+}
+
+
+.susorta {
+  position: relative;
+  left: 5vw;
+  top: 12vh;
+  width: 1%;
+  height: 80%;
+  display: block;
+  float: left;
+  background: url(line.png);
+  opacity: 0.6;
+}
+
+.sagg {
+  position: absolute;
+  right: 5vw;
+  top: 12vh;
+  width: 37%;
+  height: 80%;
+  float: left;
+}
+
+.garanti img {
+  /* padding: 10%;
+  width: 80%; */
+  padding: 0.5vw;
+  width: 4.2vw;
+}
+
+mavi {
+  position: absolute;
+  bottom: -4px;
+  left: 0.5vw;
+  width: 2vw;
+  height: 0.3vw;
+  background: #40afff;
+  box-shadow: 0px 0px 7px 3px #40afff;
+}
+
+.sagg h2 {
+  float: left;
+  font-size: 2.3vw;
+  margin: 0;
+  color: white;
+  margin-left: 1.5vw;
+}
+
+.bar {
+  position: relative;
+  width: -webkit-fill-available;
+  height: 1px;
+  background: white;
+  float: left;
+  margin-top: 2.5vw;
+}
+
+.kasa {
+  position: relative;
+  width: 210px;
+  height: 220px;
+  border: 2px solid #fe292b;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: .5s;
+  float: left;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  box-shadow: 0px 0px 7px 0px #fe292b;
+}
+
+.kasa span {
+  position: absolute;
+  bottom: 2vh;
+  left: 1vw;
+  font-size: 24px;
+  background: white;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-radius: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.kasa i {
+  margin-right: 2px;
+  color: #a67ada;
+  text-shadow: 0px 0px 4px #a67ada;
+}
+
+.kasa:hover {
+
+  background: #fe292b;
+
+}
+
+.kasa h2 {
+  position: absolute;
+  z-index: 100;
+  margin-left: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.kasa img {
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.kasainfo {
+  display: none;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: rgb(0 0 0 / 70%);
+  z-index: 100;
+  position: absolute;
+  backdrop-filter: blur(10px);
+}
+
+.kasasus {
+  position: relative;
+  width: 2.5vw;
+  height: 57vh;
+  background: #ff002f;
+  top: 25vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 2px #ff002f;
+  margin-left: 1.5vw;
+  float: left;
+}
+
+.kasainfo img {
+  position: absolute;
+  z-index: 10;
+  left: 19vw;
+  top: 35vh;
+}
+
+
+.info {
+  float: left;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  position: relative;
+  top: 7vh;
+  width: 100%;
+  margin-top: 2%;
+  padding-top: 1vh;
+  padding-left: 1vw;
+  border-left: 14px solid #ffca4a;
+  padding-bottom: 2vh;
+  left: 3vw;
+  max-height: 30vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.info a {
+  border-radius: 30px;
+  background: #ffca4a;
+  color: black;
+  text-decoration: none;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 24px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+
+btc {
+  background: white;
+  color: black;
+  padding-right: 20px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+
+btc i {
+  margin-right: 10px;
+  color: #a67ada;
+  text-shadow: 0px 0px 5px #a67ada;
+  font-size: 30px;
+  position: relative;
+  bottom: 0.1vw;
+}
+
+
+.kasainfo h1 {
+  position: absolute;
+  left: 10vw;
+  font-size: 100px;
+  color: white;
+  top: 12vh;
+  z-index: 100;
+  text-transform: uppercase;
+  text-shadow: 4px 6px 9px black;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 500;
+}
+
+
+.ustortacizgi {
+  width: 2vw;
+  height: 12vh;
+  background: white;
+  position: relative;
+  z-index: 10000;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 0px 3px 3px white;
+  opacity: 0.9;
+  float: left;
+}
+
+
+cont {
+  width: -webkit-fill-available;
+  height: 500px;
+  position: absolute;
+  left: 33vw;
+  top: 0;
+  overflow: hidden;
+}
+
+/* FRKN PAGE  */
+
+
+
+
+.background-red {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  border: none;
+  opacity: 1;
+  display: block;
+  background: linear-gradient(to right, #011d2e, #291446, #11041d);
+}
+
+.back-img {
+  width: 100%;
+  display: none;
+  height: 100%;
+  position: absolute;
+  opacity: 0.025;
+}
+
+
+/* DISPLAY START */
+.main-page {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+#item-page {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+#esc {
+  font-family: 'Roboto', sans-serif;
+}
+
+#car-rentpage {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+#container-case {
+  font-family: "Bebas Nue", sans-serif;
+  display: none;
+}
+
+.page-carbuy {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+#money-page {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+/* DISPLAY FINISH */
+
+/* HEADER START */
+.fa-shopping-cart {
+  position: absolute;
+  top: 6rem;
+  left: 7rem;
+  color: rgb(122, 118, 118);
+  font-size: 3rem;
+}
+
+.shop-text {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  top: 4.8rem;
+  left: 12rem;
+}
+
+.header-hr {
+  width: 3rem;
+  transform: rotate(90deg);
+  left: 20rem;
+  top: 7rem;
+  border: 1px solid gray;
+  position: absolute;
+}
+
+.balanca-text {
+  color: gray;
+  position: absolute;
+  top: 5.6rem;
+  left: 25rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.warn-cont {
+  position: absolute;
+  top: 5rem;
+  left: 94rem;
+  width: 21rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  transition-duration: 0.5s;
+}
+
+.warn-cont .remove {
+  position: absolute;
+  color: white;
+  top: 1.5rem;
+  left: 6.2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  transition-duration: 0.5s;
+
+}
+
+.warn-cont .warn {
+  color: white;
+  position: absolute;
+  color: white;
+  top: 1.5rem;
+  left: 13.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition-duration: 0.5s;
+
+}
+
+.warn-cont hr {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: 3rem;
+  border: 1px solid gray;
+  transform: rotate(90deg);
+  transition-duration: 0.5s;
+}
+
+.warn-cont i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 2rem;
+  color: rgb(168, 164, 164);
+  transition-duration: 0.5s;
+
+}
+
+.warn-cont:hover {
+  background-color: rgb(104, 15, 89);
+}
+
+.warn-cont:hover i {
+  background-color: rgb(104, 15, 89);
+}
+
+.warn-cont:hover .warn {
+  background-color: rgb(104, 15, 89);
+}
+
+.warn-cont:hover .remove {
+  background-color: rgb(104, 15, 89);
+}
+
+
+
+/* HEADER FINISH */
+
+
+
+
+/* CONTAINER START */
+.coin-count {
+  cursor: pointer;
+  overflow: initial;
+  position: absolute;
+  top: 6.7rem;
+  text-transform: uppercase;
+  left: 24.8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.car-rent-cont {
+  cursor: pointer;
+
+  overflow: initial;
+  position: absolute;
+  width: 45rem;
+  top: 12rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(81, 7, 104);
+  left: 7rem;
+  height: 28rem;
+  transition-duration: 0.5s;
+}
+
+.cont-first-pack {
+  cursor: pointer;
+
+  overflow: initial;
+  position: absolute;
+  width: 35rem;
+  top: 42rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(59, 88, 66);
+  left: 7rem;
+  height: 20rem;
+  transition-duration: 0.5s;
+}
+
+.cont-carbuy {
+  overflow: initial;
+  cursor: pointer;
+  position: absolute;
+  width: 32rem;
+  top: 42rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(90, 75, 44);
+  left: 44rem;
+  height: 20rem;
+  transition-duration: 0.5s;
+}
+
+.cont-cashbuy {
+  cursor: pointer;
+  overflow: initial;
+  position: absolute;
+  width: 14rem;
+  top: 42rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(0, 70, 128);
+  left: 78rem;
+  height: 20rem;
+  transition-duration: 0.5s;
+}
+
+.cont-prime {
+  cursor: pointer;
+  overflow: initial;
+  position: absolute;
+  width: 21rem;
+  top: 12rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(115, 128, 0);
+  left: 94rem;
+  height: 50rem;
+  transition-duration: 0.5s;
+}
+
+.cont-with {
+  cursor: pointer;
+  overflow: initial;
+  position: absolute;
+  width: 38rem;
+  top: 12rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(148, 42, 77);
+  left: 54rem;
+  height: 14rem;
+  transition-duration: 0.5s;
+}
+
+
+.cont-item {
+  cursor: pointer;
+  overflow: initial;
+  position: absolute;
+  width: 38rem;
+  top: 27rem;
+  border-radius: 0.3rem;
+  border: 2px solid rgb(3, 126, 85);
+  left: 54rem;
+  height: 13rem;
+  transition-duration: 0.5s;
+}
+
+/* CONTAINER FINISH*/
+
+
+
+/* CAR RENT CONTAINER START*/
+.car-rent-cont:hover {
+  transform: scale(1.02);
+  background-color: rgb(81, 7, 104);
+}
+
+.car-rent-cont h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  letter-spacing: -0.05rem;
+  font-size: 2.3rem;
+}
+
+.car-rent-cont .carr {
+  position: absolute;
+  top: 4rem;
+  z-index: 0;
+  left: -9rem;
+  width: 40rem;
+  /* transform: rotate(10deg); */
+}
+
+.car-rent-cont .car {
+  position: absolute;
+  top: 4rem;
+  left: 6.5rem;
+  width: 42rem;
+}
+
+.car-rent-cont h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 100 !important;
+  position: absolute;
+  left: 2rem;
+  top: 4rem;
+  text-transform: uppercase;
+}
+
+.car-rent-cont .cardaysinfo {
+  position: absolute;
+  top: 6rem;
+  left: 22rem;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.car-rent-cont .own {
+  position: absolute;
+  top: 3rem;
+  left: 37rem;
+  font-size: 0.8rem;
+  width: 7rem;
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* CAR RENT CONTAINER FINISH*/
+
+
+
+
+
+/* PRIME TICKET CONTAINER START*/
+.cont-prime:hover {
+  transform: scale(1.02);
+  background-color: rgb(115, 128, 0);
+}
+
+.cont-prime h1 {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.cont-prime img {
+  position: absolute;
+  top: 34rem;
+  z-index: 1;
+  left: 1rem;
+  width: 20rem;
+  transform: rotate(30deg);
+}
+
+.cont-prime .day {
+  position: absolute;
+  top: 6rem;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  left: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cont-prime .text-cont {
+  position: absolute;
+  overflow: hidden scroll;
+  width: 20rem;
+  height: 26rem;
+  top: 10rem;
+  left: -1rem;
+}
+
+.cont-prime ul {
+  margin: 0;
+  /* position: absolute; */
+  left: 10rem;
+  border-radius: 0.3rem;
+}
+
+.cont-prime ul li {
+  color: white;
+  list-style-type: none;
+  padding: 1rem;
+  /* left: 1rem; */
+}
+
+.cont-prime ul li .yellow {
+  color: rgb(255, 255, 0);
+  background-color: yellow;
+  position: relative;
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 0.6rem;
+  display: inline-block;
+  left: 0rem;
+}
+
+.cont-prime .text-cont::-webkit-scrollbar {
+  width: 0.2rem;
+  border-radius: 1rem;
+}
+
+.cont-prime .text-cont::-webkit-scrollbar-thumb {
+  background-color: rgb(212, 175, 13);
+}
+
+.cont-prime .text-cont::-webkit-scrollbar-track {
+  background-color: rgb(82, 80, 80);
+}
+
+/* PRIME TICKET CONTAINER FINISH*/
+
+
+
+/* CONT WITH START */
+.cont-with:hover {
+  transform: scale(1.02);
+  background-color: rgb(148, 42, 77);
+}
+
+.cont-with h1 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0.4rem;
+  font-weight: bold;
+  left: 3rem;
+  width: 24rem;
+  font-size: 3.5rem;
+}
+
+.cont-with img {
+  position: absolute;
+  top: 0rem;
+  left: 27rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.cont-with h2 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 3.5rem;
+  left: 3rem;
+  top: 5rem;
+  font-weight: lighter;
+}
+
+/* CONT WITH FINISH */
+
+
+
+
+/* CONT ITEM START */
+.cont-item:hover {
+  transform: scale(1.02);
+  background-color: rgb(3, 126, 85);
+}
+
+.cont-item h1 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0rem;
+  font-weight: lighter;
+  left: 4rem;
+  width: 24rem;
+  font-size: 3.5rem;
+}
+
+.cont-item img {
+  position: absolute;
+  top: -0.5rem;
+  left: 23rem;
+  width: 17rem;
+  height: 13rem;
+}
+
+.cont-item h2 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 3.5rem;
+  left: 4rem;
+  top: 4rem;
+  font-weight: lighter;
+}
+
+/* CONT ITEM FINISH */
+
+
+/* CONT CASH BUY START */
+.cont-cashbuy:hover {
+  transform: scale(1.02);
+  background-color: rgb(0, 70, 128);
+}
+
+.cont-cashbuy .test {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-weight: lighter;
+}
+
+.cont-cashbuy img {
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+  width: 12rem;
+}
+
+.cont-cashbuy h1 {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 4rem;
+  left: 4rem;
+}
+
+/* CONT CASH BUY FINISH */
+
+/* CONT FIRST PACK START */
+.cont-first-pack:hover {
+  transform: scale(1.02);
+  background-color: rgb(59, 88, 66);
+}
+
+.cont-first-pack .light {
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  top: 2rem;
+  left: 2rem;
+}
+
+.cont-first-pack .imgfirst {
+  position: absolute;
+  top: 10rem;
+  left: 22rem;
+  width: 18rem;
+  z-index: 1;
+}
+
+.cont-first-pack .imgtwo{
+  position: absolute;
+  top: 0rem;
+  left: 18rem;
+  z-index: 0;
+  width: 18rem;
+  transform: rotate(10deg);
+}
+
+.cont-first-pack .bold {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  top: 6rem;
+  left: 2rem;
+}
+
+.cont-first-pack .text-light {
+  position: absolute;
+  color: white;
+  top: 11rem;
+  left: 3.5rem;
+  font-weight: lighter;
+}
+
+.cont-first-pack .text-bold {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  top: 10.8rem;
+  left: 10.3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cont-first-pack .prime {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid gray;
+  padding: 0.5rem 2rem;
+  top: 13.5rem;
+  left: 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+
+}
+
+.cont-first-pack .price {
+  position: absolute;
+  color: white;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  border: 1px solid gray;
+  padding: 0.5rem 2rem;
+  top: 16.5rem;
+  left: 2rem;
+  border-radius: 1rem;
+}
+
+.cont-first-pack .clothing {
+  position: absolute;
+  color: white;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  border: 1px solid gray;
+  padding: 0.5rem 2rem;
+  top: 16.5rem;
+  left: 11rem;
+  border-radius: 1rem;
+}
+
+.cont-first-pack i {
+  position: absolute;
+  color: green;
+  top: 11rem;
+  left: 2rem;
+  font-size: 1.2rem;
+}
+
+.question-cont {
+ display: none
+}
+
+.question-cont .question-text{
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left: 9rem;
+  top: 2rem;
+}
+
+.question-cont .question-mini{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 7rem;
+  width: 22rem;
+  top: 7rem;
+  text-align: center;
+}
+
+.question-cont .question-button{
+  position: absolute;
+  z-index: 1;
+  top: 11rem;
+  left: 11rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+}
+
+.question-cont .question-button:hover{
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+}
+
+.question-cont .question-cancel{
+  position: absolute;
+  z-index: 1;
+  top: 11rem;
+  left: 18rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+}
+
+.question-cont .question-cancel:hover{
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+}
+
+
+/* CONT FIRST PACK FINISH */
+
+/* CONT CAR BUY START */
+.cont-carbuy:hover {
+  transform: scale(1.02);
+  background-color: rgb(90, 75, 44);
+}
+
+.cont-carbuy .cars {
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.cont-carbuy img {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 33rem;
+  transform: rotate(-5deg);
+}
+
+.cont-carbuy .trans {
+  color: white;
+  position: absolute;
+  top: 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  left: 2rem;
+}
+
+.cont-carbuy .for {
+  position: absolute;
+  top: 4.8rem;
+  left: 22rem;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.cont-carbuy .own {
+  position: absolute;
+  top: 1.5rem;
+  left: 24rem;
+  font-size: 0.8rem;
+  width: 7rem;
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* CONT CAR BUY FINISH */
+
+
+/* OWNED CAR PAGE START */
+
+
+.page-carbuy .headers {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  top: 4rem;
+  left: 4rem;
+}
+
+.page-carbuy hr {
+  position: absolute;
+  border: 1px solid gray;
+  top: 6.2rem;
+  left: 34rem;
+  width: 3.5rem;
+  transform: rotate(90deg);
+}
+
+.page-carbuy .balanca-text {
+  position: absolute;
+  color: gray;
+  left: 38rem;
+  top: 4.5rem;
+}
+
+.page-carbuy .coin-count {
+  position: absolute;
+  color: white;
+  left: 38rem;
+  top: 5.7rem;
+}
+
+.page-carbuy .two-hr {
+  position: absolute;
+  border: 1px solid gray;
+  top: 6.2rem;
+  left: 54rem;
+  width: 3.5rem;
+  transform: rotate(90deg);
+}
+
+
+.page-carbuy nav {
+  width: 330px;
+  top: 1.4rem;
+  left: 60rem;
+  position: absolute;
+  height: 4.2rem;
+  /* background: #d9d9d9; */
+  margin: 40px auto;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.drop {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 1.6rem;
+  left: 1.3rem;
+  color: white;
+}
+
+.drop-header {
+  position: absolute;
+  color: gray;
+  top: 0.3rem;
+  left: 1.3rem;
+}
+
+.page-carbuy h1 {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.page-carbuy li a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+
+.page-carbuy span {
+  padding: 40px;
+  background: transparent;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+
+}
+
+.page-carbuy span::after {
+  float: right;
+  right: 10%;
+  content: '>';
+  transform: rotate(90deg);
+  font-size: 1em;
+  color: gray;
+  position: absolute;
+  top: 1.2rem;
+}
+
+.page-carbuy .slide {
+  position: absolute;
+  z-index: 1;
+  clear: both;
+  width: 100%;
+  height: 0px;
+  opacity: 0.7;
+  transition: all 0.5s;
+  overflow: hidden scroll;
+  font-size: 1rem;
+  color: white;
+  transition: height .4s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.page-carbuy .slide li {
+  background-color: #ffffff;
+  padding: 30px;
+  color: white !important;
+  font-size: 1rem;
+}
+
+.page-carbuy #touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+.page-carbuy #touch:checked+.slide {
+  height: 80px;
+}
+
+.page-carbuy .main-image {
+  position: absolute;
+  top: 18rem;
+  left: 32rem;
+  height: 25rem;
+  transition-duration: 0.5s;
+}
+
+.page-carbuy .main-image:hover {
+  cursor: pointer;
+  /*     
+  left: 30rem; */
+}
+
+.page-carbuy .car-name {
+  color: white;
+  position: absolute;
+  top: 50rem;
+  font-size: 2rem;
+  left: 4rem;
+  font-weight: bold;
+}
+
+.page-carbuy .cost-cont {
+  width: 7.5rem;
+  border: 1px solid gray;
+  top: 49rem;
+  position: absolute;
+  left: 25rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+}
+
+.page-carbuy .cost-cont .text {
+  color: gray;
+  top: 0.7rem;
+  left: 0.5rem;
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-carbuy .cost-cont .cost {
+  color: rgb(77, 214, 77);
+  top: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  left: 0.3rem;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+
+.page-carbuy .max-header {
+  position: absolute;
+  color: gray;
+  top: 49rem;
+  left: 40rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .max {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 50.5rem;
+  left: 40rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .trunk-header {
+  position: absolute;
+  color: gray;
+  top: 53rem;
+  left: 40rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .trunk {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 54.5rem;
+  left: 40.2rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .ac-header {
+  position: absolute;
+  color: gray;
+  top: 49rem;
+  left: 56rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .ac {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 50.5rem;
+  left: 56rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .fuel-header {
+  position: absolute;
+  color: gray;
+  top: 53rem;
+  left: 56rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .fuel {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 54.5rem;
+  left: 56rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .ins-header {
+  position: absolute;
+  color: gray;
+  top: 49rem;
+  left: 75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .ins {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 50.5rem;
+  left: 75rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .extra-header {
+  position: absolute;
+  color: gray;
+  top: 53rem;
+  left: 75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-carbuy .extra {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 54.5rem;
+  left: 75rem;
+  font-size: 1.2rem;
+}
+
+.page-carbuy .buy {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 51rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  left: 94rem;
+  font-size: 1.2rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.page-carbuy .buy:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 40px gray;
+  transform: scale(1.1);
+}
+
+.page-carbuy .testdrive {
+  position: absolute;
+  position: absolute;
+  color: white;
+  top: 51rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  left: 101.5rem;
+  font-size: 1.2rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.page-carbuy .testdrive:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 40px gray;
+  transform: scale(1.1);
+}
+
+.page-carbuy .slider-cont {
+  position: absolute;
+  top: 55.5rem;
+  float: left;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  left: 4rem;
+  height: 10.2rem;
+  width: 85rem;
+}
+
+.page-carbuy .slider-cont::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.page-carbuy .slider-cont::-webkit-scrollbar-track {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+
+.page-carbuy .slider-cont::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.page-carbuy .slider-cont .cart {
+  overflow: initial;
+  border: 3px solid gray;
+  border-radius: 0.3rem;
+  width: 9rem;
+  height: 8rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  float: left !important;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+
+.page-carbuy .slider-cont .cart:hover {
+  border: 3px solid yellow;
+  transform: scale(1.1);
+}
+
+.page-carbuy .slider-cont .cart:hover #sha {
+  display: block;
+}
+
+.page-carbuy .slider-cont .cart img:hover {
+  transform: scale(1.1);
+}
+
+.page-carbuy .slider-cont img {
+  width: 5rem;
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
+  transition-duration: 0.5s;
+}
+
+#sha {
+  display: none;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: -0.5rem;
+  z-index: 0;
+  box-shadow: 58px 55px 50px 10px yellow;
+  transition-duration: 0.5s;
+}
+
+.page-carbuy .slider-cont .card-name {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
+  top: 2rem;
+  left:1rem;
+  transition-duration: 0.5s;
+  width: 8.2rem;
+}
+
+/* OWNED CAR PAGE FINISH */
+
+
+/* ESC START */
+#esc {
+  display: none;
+}
+
+.esc .close {
+  position: absolute;
+  top: 2rem;
+  font-weight: bold;
+  right: 6.5rem;
+  color: gray;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.esc .esctext {
+  position: absolute;
+  top: 1.5rem;
+  font-weight: bold;
+  right: 2.5rem;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  background-color: rgb(177, 174, 174);
+  transition-duration: 0.5s;
+}
+
+.esc .esctext:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transform: scale(1.1);
+}
+
+/* ESC FINISH */
+
+
+
+
+
+/* CAR RENT PAGE START */
+
+.car-slider-hr {
+  width: 15rem;
+  top: -1rem;
+  margin: 15px;
+  border-radius: 0.5rem;
+  border: 0.1px solid rgb(113, 107, 107)
+}
+
+
+
+
+.car-select-image {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 24rem;
+  left: 42rem;
+  transition-duration: 0.5s;
+}
+
+.car-select-image:hover {
+  left: 40rem
+}
+
+.car-select-buy {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  position: absolute;
+  top: 25rem;
+  left: 27rem;
+  padding: 20px;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0px 30px 80px 20px rgb(255 255 255 / 75%);
+  transition-duration: 0.5s;
+}
+
+.car-rent-info {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 18rem;
+  left: 27rem;
+  color: white;
+  border: 2px solid gray;
+  padding: 20px 10px 15px;
+  border-radius: 2rem;
+  transition-duration: 0.5s;
+}
+
+.car-select-buy:hover {
+  background-color: #9f9fa0;
+  top: 26rem;
+  cursor: pointer;
+}
+
+
+
+.car-slider-container {
+  background-color: rgb(15, 1, 51);
+  opacity: 0.9;
+  overflow: hidden scroll;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 17rem;
+  height: 55rem;
+  border-radius: 1rem;
+}
+
+.car-slider-container::-webkit-scrollbar {
+  width: 6px;
+  background-color: #474847;
+
+}
+
+.car-slider-container::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 5px;
+}
+
+.car-slider-container .car-card {
+  cursor: pointer;
+  position: relative;
+  padding: 30px 30px 5px;
+  transition-duration: 0.5s;
+}
+
+.car-slider-container .car-card:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.car-slider-container .car-card:hover>.car-name {
+  color: black;
+}
+
+.car-slider-container .car-name {
+  font-weight: bolder;
+  opacity: 1;
+  position: absolute;
+  left: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.car-slider-container .car-img {
+  opacity: 1 !important;
+  position: relative;
+  width: 10rem;
+  left: 1rem;
+  top: 1rem;
+  padding: 1rem;
+}
+
+
+.car-select-name {
+  position: absolute;
+  top: 12rem;
+  left: 27rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.car-select-cost {
+  position: absolute;
+  top: 5.8rem;
+  left: 30.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.car-select-hr {
+  position: absolute;
+  top: 7.5rem;
+  width: 3.5rem;
+  left: 25.7rem;
+  border: 1px solid rgb(163, 158, 158);
+  transform: rotate(90deg);
+}
+
+.car-buy-cont{
+  display: none;
+}
+
+#moneyheader{
+  left: 58rem;
+}
+
+.car-select-buy-text-header{
+  position: absolute;
+  top: 25.5rem;
+  left: 40rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.car-select-buy-button{
+  position: absolute;
+  top: 35.5rem;
+  left: 39.3rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+}
+
+#moneybuybutton{
+  left: 57rem;
+}
+
+.car-select-cont-hr{
+  position: absolute;
+  top: 35.5rem;
+  left: 46.3rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  width: 20rem;
+  box-shadow: 0px 30px 80px 20px rgba(35, 6, 116, 0.75);
+  transform: rotate(95deg);
+  opacity: 0.8;
+  border: 1px solid gray;
+  transition-duration: 0.5s;
+}
+
+#moneyhr1{
+  left: 66rem;
+}
+
+
+#moneyhr2{
+  left: 55rem;
+}
+.car-select-cont-hr2{
+  position: absolute;
+  top: 45.5rem;
+  left: 35.3rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  width: 20rem;
+  opacity: 0.8;
+  box-shadow: 0px 30px 80px 20px rgba(35, 6, 116, 0.75);
+  border: 1px solid gray;
+  transition-duration: 0.5s;
+}
+
+.car-select-buy-button:hover{
+  background-color: yellow;
+  top: 35rem;
+  color: black;
+  cursor: pointer;
+}
+
+.car-select-cancel-button{
+  position: absolute;
+  top: 35.5rem;
+  left: 45rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(182, 177, 177);
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+}
+
+#moneycancel{
+  left: 65rem;
+}
+
+.car-select-cancel-button:hover{
+  background-color: yellow;
+  top: 35rem;
+  color: black;
+  cursor: pointer;
+}
+
+.car-select-buy-text{
+  position: absolute;
+  top: 30.5rem;
+  text-align: center;
+  width: 22rem;
+  left: 35rem;
+  z-index: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+#moneytext{
+  left:53rem;
+}
+
+
+.car-select-car-price {
+  position: absolute;
+  top: 7rem;
+  left: 30rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: white;
+}
+
+
+.car-date {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.car-date-border {
+  padding: 10px 10px 10px;
+  position: absolute;
+  border-radius: 15rem;
+  background: transparent;
+  border: 1px solid #9c9c9c;
+  top: 19rem;
+  left: 27rem;
+  font-weight: bold;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 0.5;
+  border: 0.5px solid rgba(255, 255, 255, 0.21);
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin: 6px 32px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-family: 'Akrobat-Semi-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+}
+
+.musclebutton {
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+}
+
+.speedbutton {
+  position: absolute;
+  left: 2.5rem;
+  top: 9rem;
+}
+
+.donatebutton {
+  position: absolute;
+  left: 2.5rem;
+  top: 13rem;
+}
+
+.button:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(255, 255, 255, 0.25);
+  color: black;
+}
+
+
+#close {
+  position: absolute;
+  color: white;
+  /* width: 10rem; */
+  /* height: 10rem; */
+  font-size: 2rem;
+  z-index: 1;
+  top: 1rem;
+  cursor: pointer;
+  left: 115rem;
+}
+
+/* CAR RENT PAGE FINISH */
+
+
+
+/* ITEM PAGE START */
+.item-page .item-cont {
+  /* background-color: white; */
+  overflow: hidden scroll;
+  position: absolute;
+  top: 12rem;
+  left: 5rem;
+  width: 60rem;
+  height: 50rem;
+  border-radius: 1rem;
+  transition-duration: 2s;
+}
+
+.headertest {
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  top: 3rem;
+  left: 9rem;
+  font-weight: bold;
+}
+
+.descriptiontest{
+  text-transform: uppercase;
+  position: absolute;
+  color: gray;
+  font-size: 0.8rem;
+  top: 8rem;
+  left: 9rem;
+  font-weight:lighter;
+}
+
+.item-page .itempagehr{
+  position: absolute;
+  top: 5rem;
+  width: 3.5rem;
+  left: 36.7rem;
+  border: 1px solid gray;
+  transform: rotate(90deg);
+}
+.item-page .balanca-text{
+  position: absolute;
+  top: 3.7rem;
+  left: 40.7rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: gray;
+}
+
+.item-page .coin-count{
+  position: absolute;
+  top: 5rem;
+  left: 40.7rem;
+  font-size: 1.8rem;
+  font-weight:bold;
+  color: white
+}
+
+.item-page .item-cont::-webkit-scrollbar {
+  width: 6px;
+  background-color: #474847;
+
+}
+
+.item-page .item-cont::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 5px;
+}
+
+
+
+.item-page .craft-card {
+  clip-path: polygon(0% 15%, 0 0, 10% 5%, 21% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  top: 0rem;
+  left: 3rem;
+  border: 2px solid rgb(88, 88, 88);
+  opacity: 1;
+  float: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  transition-duration: 0.5s;
+  overflow: initial;
+  cursor: pointer;
+}
+
+.item-page .craft-card:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.item-page .item-cont:hover {
+  opacity: 1;
+}
+
+.item-page .item-cont .car-card:hover>.car-name {
+  color: black;
+}
+
+.item-page .item-cont .car-name {
+  font-weight: bolder;
+  opacity: 1;
+  position: absolute;
+  left: 3.5rem;
+  top: 8rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.item-page .item-cont .car-img {
+  position: relative;
+  width: 7rem;
+  left: 0.5rem;
+  top: -1rem;
+  padding: 1rem;
+  opacity: 1 !important;
+}
+
+/* .item-select hr {
+  position: absolute;
+  top: 7rem;
+  width: 3.5rem;
+  left: 30.7rem;
+  border: 1px solid gray;
+  transform: rotate(90deg);
+} */
+
+.item-select .cost {
+  position: absolute;
+  left: 68em;
+  top: 43rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.item-select .coin {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: bold;
+  left: 40em;
+  top: 45rem;
+  position: absolute;
+}
+
+
+.item-select .name {
+  position: absolute;
+  top: 40rem;
+  left: 68rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.item-select .category {
+  position: absolute;
+  top: 40rem;
+  left: 91rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid gray;
+  letter-spacing: -0.05rem;
+  border-radius: 2rem;
+  text-align: center;
+  /* width: 5rem; */
+  padding: 0.5r;
+  padding: 0.5rem;
+}
+
+.item-select .desc-head{
+  position: absolute;
+  left: 68em;
+  top: 48rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.item-select .desc {
+  position: absolute;
+  top: 50rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  left: 68rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: white;
+  width: 25rem;
+}
+
+.item-select .buy {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 8rem;
+  text-align: center;
+  position: absolute;
+  top: 56rem;
+  left: 68rem;
+  padding: 20px;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0px 30px 80px 20px rgb(255 255 255 / 75%);
+  transition-duration: 0.5s;
+}
+
+.item-select .buy:hover {
+  background-color: #9f9fa0;
+  top: 57rem;
+  cursor: pointer;
+}
+
+.item-select .pant {
+  position: absolute;
+  top: 16rem;
+  left: 65rem;
+  width: 21rem;
+}
+
+.item-select .cloth{
+  position: absolute;
+  top: 8rem;
+  left: 75rem;
+  width:90rem;
+  opacity: 0.15;
+}
+
+/* ITEM PAGE FINISH */
+
+
+
+
+/* MONEY PAGE START */
+.money-page .money-cont {
+  background-color: #405058;
+  opacity: 0.5;
+  overflow: hidden;
+  position: absolute;
+  top: 10rem;
+  left: 15rem;
+  width: 20rem;
+  height: 50rem;
+  border-radius: 1rem;
+  transition-duration: 2s;
+}
+
+
+
+
+.money-page .money-cont .car-card {
+  cursor: pointer;
+  position: relative;
+  padding: 50px 50px 5px;
+  transition-duration: 0.5s;
+}
+
+.money-page .money-cont hr {
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  width: 17.5rem;
+  border: 0.1px solid gray;
+}
+
+.money-page .money-cont .car-card:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.money-page .money-cont:hover {
+  opacity: 1;
+}
+
+
+.money-page .money-cont .car-card:hover>.car-name {
+  color: black;
+}
+
+.money-page .money-cont .car-name {
+  font-weight: bolder;
+  opacity: 1;
+  position: absolute;
+  left: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.money-page .money-cont .car-img {
+  opacity: 1 !important;
+  position: relative;
+  width: 7rem;
+  left: 8rem;
+  top: 1rem;
+  padding: 1rem;
+}
+
+
+
+.money-select .main-hr {
+  position: absolute;
+  top: 12rem;
+  width: 3.5rem;
+  left: 38.7rem;
+  border: 1px solid gray;
+  transform: rotate(90deg);
+}
+
+.money-select .cost {
+  position: absolute;
+  top: 10rem;
+  left: 43rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.money-select .coin {
+  position: absolute;
+  top: 12rem;
+  left: 43rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.money-select .name {
+  position: absolute;
+  top: 18rem;
+  left: 40rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.money-select .category {
+  position: absolute;
+  top: 25rem;
+  left: 40rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid gray;
+  letter-spacing: -0.05rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 15rem;
+  padding: 0.2rem 1rem;
+}
+
+
+.money-select .buy {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 8rem;
+  text-align: center;
+  position: absolute;
+  top: 30rem;
+  left: 40rem;
+  padding: 20px;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0px 30px 80px 20px rgb(255 255 255 / 75%);
+  transition-duration: 0.5s;
+}
+
+.money-select .buy:hover {
+  background-color: #9f9fa0;
+  top: 31rem;
+  cursor: pointer;
+}
+
+.money-select img {
+  position: absolute;
+  top: 35rem;
+  left: 85rem;
+  width: 10rem;
+}
+
+/* MONEY PAGE FINISH */
+
+
+@media screen and (max-height: 1050px) {
+  .cont-prime {
+    left: 82rem;
+    }
+    .warn-cont {
+      left: 82rem;
+    }
+    .cont-with{
+      width: 27rem;
+    }
+    .cont-with h1{
+      font-size: 2.5rem;
+      top: 2rem;
+      left: 1rem;
+    }
+    .cont-with h2{
+      font-size: 2.5rem;
+      top: 8rem;
+      left: 1rem;
+    }
+    .cont-with img{
+      left: 16rem;
+      top: 1rem;
+    }
+    .cont-item {
+      width:27rem
+    }
+    .cont-item img{
+      left: 12rem;
+    }
+    .cont-item h1{
+      font-size: 3rem;
+      left: 2rem;
+    }
+    .cont-item h2{
+      font-size: 3rem;
+      left: 2rem;
+    }
+    .cont-cashbuy{
+      left:67rem;
+    }
+    .cont-first-pack{
+      width: 23rem;
+    }
+    .cont-first-pack .imgfirst{
+      top: 7rem;
+      left: 13.5rem;
+      width: 12rem;
+    }
+    .cont-carbuy{
+      left: 32rem;
+      width: 33rem;
+    }
+} 
+
+
+
+@media screen and (max-width: 1600px) {
+  .shop-text{
+    top: 1rem;
+  }
+  .fa-shopping-cart{
+    top: 2rem;
+  }
+  .header-hr{
+    top: 3rem;
+  }
+  .balanca-text{
+    top: 2rem;
+  }
+  .coin-count{
+    top: 3rem;
+  }
+  .warn-cont{
+    top: 2rem;
+    left: 75rem;
+  }
+  .cont-prime{
+    top: 8rem;
+    width: 16rem;
+    height: 47rem;
+  }
+  .cont-prime .text-cont{
+    width: 16rem;
+  }
+  .cont-prime img{
+    top: 36rem;
+    left: 3rem;
+    width: 12rem;
+  }
+  .cont-with{
+    top: 8rem;
+  }
+  .cont-item{
+    top: 24rem;
+  }
+  .cont-cashbuy{
+    top: 39rem;
+    height: 16rem;
+  }
+  .cont-cashbuy img{
+    width: 10rem;
+    left: 2rem;
+    top: 8rem;
+  }
+  .car-rent-cont{
+    top: 8rem;
+    height: 29rem;
+  }
+  .cont-first-pack{
+    top: 39rem;
+    height: 16rem;
+  }
+  .cont-first-pack .light{
+    font-size: 2rem;
+  }
+  .cont-first-pack .bold{
+    font-size: 2rem;
+    top: 4rem;
+  }
+  .cont-first-pack .text-light{
+    top: 8rem;
+  }
+  .cont-first-pack .text-bold{
+    top: 8rem;
+  }
+  .cont-first-pack i {
+    top: 8rem;
+  }
+  .cont-first-pack .prime{
+    top: 10rem;
+  }
+  .cont-first-pack .price{
+    top: 13rem;
+  }
+  .cont-first-pack .clothing{
+    top: 10rem;
+  }
+  .cont-first-pack .imgfirst{
+    top: 2rem;
+    left: 14rem;
+    width: 12rem;
+  }
+  .cont-carbuy{
+    top: 39rem;
+    height: 16rem;
+  }
+  .cont-carbuy img{
+    width: 25rem;
+    top: 4rem;
+    left: 10rem;
+  }
+}
+

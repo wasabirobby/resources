@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/e5864653ea.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Frkn-Fuel</title>
+  </head>
+  <!-- <iframe id="frame"  width="2000" height="1300" src="https://www.youtube.com/embed/NzqX83TJolw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <!-- <iframe  id="frame" width="2000" height="1300" src="https://www.youtube.com/embed/LBpZNZBQsrE?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe> -->
+  <div id="background-image-test"></div>
+  <body id="body">
+    <div id="frknbody"> 
+    <div id="container-main" class="container-main">
+      <div class="container" id="cont-display">
+        <div onclick="openhomepage()" id="homepagetext" class="homepagetext">Home Page
+          <hr id="hrid">
+        </div>
+        <div onclick="openemgpage()" id="emppagetext" class="emppagetext">Employee Page
+          <hr id="hridpage">
+        </div>
+        <div class="dash-text">Pages</div>
+        <div id="change1" class="dash-text dash">/ Dashboard</div>
+        <div id="change2" class="dash-text dash-big">Dashboard</div>
+        <!-- <div onclick="opennameinput()" class="fuelname">Fuel Station </div> -->
+        <div onclick="namechange()" id="changebutton" class="changebutton"></div>
+        <input value="FUEL STATION"  id="fname" class="inputchange" name="fname">
+        <div id="newpage">
+
+<!-- 
+        <div class="welcome-container">
+
+
+          <div class="welcome-header">Welcome Back</div>
+          <div class="welcome-name">Furkan Yücel</div>
+          <div class="welcome-message">Glad to see you again!</div>
+        </div>
+
+        <div onclick="fill()" class="tanker-conatainer">
+          <i class="fa fa-gas-pump" id="tanker-header" aria-hidden="true"
+            >You can fill your tanker here</i
+          >
+
+        </div> -->
+        <div id="stat" class="station-updated">
+          <!-- <div class="tankerheader">Information about the tanker</div>
+          <div id="level1" class="level25"></div>
+          <div id="level1num" class="level25text">1</div>
+          <div id="level2" class="level50"></div>
+          <div id="level2num" class="level50text">2</div>
+           <div id="level3" class="level75"></div>
+           <div id="level3num" class="level75text">3</div>
+         <div id="level4" class="level100"></div> 
+         <div id="level4num" class="level100text">4</div> 
+         <div class="levelupdatebutton"></div> 
+         <div onclick="update()" class="levelupdatebuttontext">Update</div> 
+         <div class="levelinfobutton"></div>
+         <div class="levelinfobuttontext">Here you can increase your tanker level.</div>
+         <hr class="priceinfohr">
+         <div class="withtext">
+          You can view and withdraw the money in the company vault here.
+        <div id="companyprice" class="withprice">8965$</div>   
+        <input  value="8965$"  id="withname" class="withchange" name="fname">
+      </div>
+          <div
+          role="progressbar"
+          aria-valuenow="65"
+          aria-valuemin="0"
+          aria-valuemax="100"
+
+        ></div>  -->
+        </div>
+        <div class="radial-cont">
+          <div class="radial-header">General Information</div>
+          <div id="limit25" class="level25"></div>
+          <div id="limit25text" class="level25text">25</div>
+          <div id="limit50"  class="level50"></div>
+          <div id="limit50text"  class="level50text">50</div>
+           <div id="limit75"  class="level75"></div>
+           <div id="limit75text"  class="level75text">75</div>
+         <div id="limit100"  class="level100"></div> 
+         <div id="limit100text" class="level100text">100</div> 
+         <div onclick="fill()" class="levelupdatebutton"></div> 
+         <div  class="levelupdatebuttontext">Fill</div> 
+         <div class="levelinfobutton"></div>
+         <div class="levelinfobuttontext">You can fill your tanker here</div>
+        <div class="fillupdatepriceheader">Here you can find out the tanker filling price.</div>
+        <div class="updatepriceback">
+          <div id="leveltankerprice" class="updatepricemoney">500</div> 
+          <div class="updatepricedolar">$</div> 
+        </div> 
+        <div class="tankerlimit">
+          <div id="tanker-limit" class="limittext">Tanker Limit : 6000</div>
+        </div>
+        <!-- <div class="radial-onebox">
+            <div class="radialtext">Total sales amount</div>
+            <div id="totaluser" class="radial-usernumber">25 People</div>
+          </div>
+          <div class="radial-twobox">
+            <div class="radialtext">The amount of gasoline in the tanker</div>
+            <div id="litre-tanker" class="radial-usernumber">512 Liter</div>
+          </div>
+          -->
+        
+        </div>
+
+       
+        <!-- <div class="todas-money">
+          <div class="today-header">Money</div>
+          <div id="header-price" class="today-header price">$56.000</div>
+          <div class="money-icon">
+            <i class="fa fa-money" aria-hidden="true"></i>
+
+          </div>
+        </div> -->
+        <!-- <div class="todas-user">
+          <div class="today-header">Users</div>
+          <div id="usernumber" class="today-header price">32 Users</div>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </div> -->
+
+        <!-- <div class="todas-gas">
+          <div class="today-header">Gas Liter</div>
+          <div id="litre-tanker-header" class="today-header price">512 Liters</div>
+          <i class="fa fa-ship" aria-hidden="true"></i>
+        </div>
+
+        <div class="withdraw-money">
+          <div id="with-text" class="withdraw-text">Money in the safe : $500 </div>
+          <div onclick="withdraw()" class="withdraw-button">Withdraw</div>
+        </div>
+
+
+        <div class="name-change">
+          <input id="name-input" placeholder="Fuel Name Change">
+           <div onclick="namechange()" class="name-change-button" >Change</div>
+        </div>
+        <button onclick="closeFunction()" type="button" class="btn-close">
+          <span class="icon-cross"></span>
+          <span  class="visually-hidden">Close</span>
+        </button> -->
+
+        <!-- <div class="todas-total">
+          <div class="today-header">Today's turnover</div>
+          <div class="today-header price">$584.22</div>
+          <i class="fas fa-file-invoice"></i>
+        </div> -->
+        <!--
+        <div class="station-name">
+          <div class="station-header">Shop name</div>
+          <label for="lname">Last Name</label>
+          <input class="today-header " type="text" id="lname" name="lastname" placeholder="company name">
+          <i class="fas fa-file-invoice"></i>
+        </div> -->
+        <!-- <div class="slider">
+          <div class="slider-header">GAS STATION</div>
+          <hr class="slider-hr" />
+          <div class="dashboard-text">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Dashboard
+          </div>
+        </div> -->
+        <div class="graftext">Company information </div>
+        <div class="graficimg">
+          <img src="../images/test.jpg">
+        </div>
+      
+        <div class="order"></div>
+        <div class="desc-header">Short description</div>
+        <!-- <div class="desc-header desc-header-alt">Here you can check some information about the company</div> -->
+        <div class="finance">
+            Finance Status: <a style='color:#009D3E' id="test">Very Good</a>
+        </div>
+
+       <div class="desc-header totalprice">
+          <i class="fa fa-calculator" id="total-turnover" aria-hidden="true"></i>
+        </div>
+
+        <div class="user-info-cont">
+         <div id="user-info-name" class="user-info-name">Name: <a id="frknname">Furkan fYücel</a></div>
+          <div id="user-info-bank" class="user-info-bank">Bank: <a id="bank">$5000</a></div>
+          <div id="user-info-cash" class="user-ino-cash">Cash: <a id="cash">$3643</a> </div>
+          <div id="user-total" class="user-total">Total User: <a>56 Users</a> </div>
+        </div>
+        <!-- <div class="desc-header todayprice">
+          <i class="fa fa-calculator" aria-hidden="true"></i>
+          Today turnover : $584.22
+        </div> -->
+        <!-- <div class="desc-header litre">
+          <i class="fa fa-gas-pump" aria-hidden="true"></i>
+          Liters of gasoline sold today : 30
+        </div> -->
+      </div>
+    </div>
+    <!-- <div id="slider-display" class="slider">
+      <div id="slader-fuel-name" class="slider-header">GAS STATION</div>
+      <hr class="slider-hr" />
+      <div class="dashboard-text" onclick="home()">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </div>
+      <div id="userslider" class="usertext" onclick="slideremp()">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+    </div> -->
+
+
+   <!-- <div id="buy-container-main" class="buy-container-main">  
+    <button style="left: 85rem;background: transparent;width: 3rem;" onclick="closeFunction()" style="  background: #535961 !important;    " type="button" class="btn-close">
+      <span class="icon-cross"></span>
+      <span  class="visually-hidden">Close</span>
+    </button>
+    <div class="user-info-conainer">
+ <div class="user-hello">HELLO...</div> 
+      <div class="user-name">
+        <i id="buy-user-name" class="fa fa-user" aria-hidden="true">  Furkan</i>
+      </div>
+      <div class="user-bank">
+        <i id="buy-user-bank" class="fa fa-bank"> $54865</i>
+      </div>
+      <div class="user-cash">
+        <i id="buy-user-cash" class="fa fa-money" aria-hidden="true"> $4522</i>
+      </div>
+
+    </div>
+   <div class="buy-conatainer">
+
+      <section class="pricing-table">
+      <div class="card">
+          <h6 class="type">This place has no owner</h6>
+          <div class="buy-gas-price"><span>$</span>20</div>
+          <h5 class="plan">Fuel</h5>
+          <ul class="details">
+            <li>Gas Station</li>
+            <li>FREE Delivery</li>
+          </ul>
+          <div class="card-buy-button">
+            <h3 class="btn">Buy</h3>
+          </div>
+        </div> 
+
+      </section>
+
+ <table>
+        <thead>
+          <tr>
+            <th id="user">Station Id</th>
+            <th id="name">Name</th>
+            <th id="owner">Owner</th>
+            <th id="price">Price</th>
+            <th id="buy-button">Buy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <div id="main-table">
+            <tr>
+              <td>
+                <div class="id-td" id="station-id">
+                  1
+                </div>
+              </td>
+              <td class="name-td">Furkan</td>
+              <td class="owner-td">CID14DFDF</td>
+              <td class="buy-price-td">$584.22</td>
+              <td class="button button2">sdgfd</td>
+            </tr>
+        </div>
+        </tbody>
+      </table> 
+    </div> 
+
+  </div>-->
+
+</div>
+  <div id="emp">
+<div class="lastbuyheader">You can view the invoices here</div>
+    <div class="last-buy">
+      <div class="header">Gas bills</div>
+
+      <div  class="header alt">You can check who buys how much fuel from your company and their information here.</div>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th id="user">User Name</th>
+            <th id="date">Plate</th>
+            <th id="vehicle-model">Vehicle Model</th>
+            <th id="price-hst">Price</th>
+            <th id="gas">Gas Liter</th>
+          </tr>
+        </thead>
+                    
+        <tbody>
+          <div id="history-main">
+          <!-- <tr>
+            <td class="user-td">
+             Furkan Yücel
+              <hr class="buy-history-hr" />
+            </td>
+            <td class="date-td">25DRF22</td>
+            <td class="vehicle-td">T20</td>
+            <td class="price-td">$584.22</td>
+    
+          <td>
+              <div id="container">
+                <label for="water">
+                  <div id="fill"></div>
+                </label>
+                <span id="progress">50%</span>
+              </div>
+            </td>
+          </tr> -->
+        </div>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- <div class="empheader">From here, you can hire or fire workers for your company.</div> -->
+  
+  <div class="employeaddcont">
+    <div class="text">Hire</div>
+  </div>
+<div id="hirecont" class="hirelistcont">
+  <!-- <div class="hirelistcart">
+    <div class="hirename">Furkan Yücel 01/01/1995</div> 
+    <div class="artı">+</div>
+     <hr> 
+  </div> -->
+</div>
+  
+  <div  class="firecont">
+    <div class="text">Fire</div>
+  </div>
+
+   <div  id="firecont" class="firelistcont">
+    <!-- <div class="firelistcart">
+      <div class="hirename">Furkan Yücel 01/01/1995</div>
+      <div class="artı">-</div>
+      <hr>
+    </div>
+    <div class="firelistcart">
+      <div class="hirename">Furkan Yücel 01/01/1995</div>
+      <div class="artı">-</div>
+      <hr>
+    </div> -->
+    
+  </div> 
+  </div>
+  </div>
+</div>
+  </body>
+
+
+</html>
+<script src="./script.js" type="text/javascript"></script>

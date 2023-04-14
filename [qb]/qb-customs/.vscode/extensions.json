@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "sumneko.lua",
+        "fivem-vscode.fivem-vscode",
+        "ihyajb.qbcore-code-snippets",
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github",
+        "Vue.volar", 
+        "Vue.vscode-typescript-vue-plugin"
+    ]
+}

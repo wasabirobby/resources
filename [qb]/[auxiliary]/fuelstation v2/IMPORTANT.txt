@@ -1,0 +1,12 @@
+DONT RENAME FOLDERS IF YOU DONT KNOW HOW TO DO THIS!!!
+If you have problems, always write in support ticket and we will help you!
+Support online whatsapp chat - https://imgur.com/a/1S2AH5K
+Support email - fivemscriptstore@gmail.com
+
+If you need version for QBCORE just write in support ticket or email and we will convert it for you.
+
+Boss command : /fuel
+
+Worker command : /empfuel
+
+Don't forget to query the SQL.

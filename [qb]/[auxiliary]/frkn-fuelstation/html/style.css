@@ -1,0 +1,2977 @@
+* {
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Akrobat-Medium",sans-serif;
+  /* font-family: "Open Sans" , sans-serif; */
+}
+
+/* #background-image-test {
+  background-image: url("../images/blue.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: none;
+  width: 1920px;
+  height: 1080px;
+} */
+
+#body {
+  /* background-image: url("../images/blue.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: none;
+}
+
+@font-face {
+  font-family: Akrobat-Black;
+  src: url("Akrobat-Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Bold;
+  src: url("Akrobat-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Ex-Bold;
+  src: url("Akrobat-ExtraBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Light;
+  src: url("Akrobat-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Medium;
+  src: url("Akrobat-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Regular;
+  src: url("Akrobat-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Semi-Bold;
+  src: url("Akrobat-SemiBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Akrobat-Thin;
+  src: url("Akrobat-Thin.otf") format("truetype");
+}
+
+
+
+
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Regular.ttf") format("truetype")
+}
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Thin.ttf") format("truetype");
+  font-weight:100
+}
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Light.ttf") format("truetype");
+  font-weight:200
+}
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Middle.ttf") format("truetype");
+  font-weight:300
+}
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Italic.ttf") format("truetype");
+  font-style:italic
+}
+@font-face{
+  font-family:"Bebas Nue";
+  src:url("BebasNeuePro-Bold.ttf") format("truetype");
+  font-weight:700
+}
+
+
+
+
+
+
+
+
+
+/* .container-main {
+  display: block;
+  width: 100rem;
+  height: 50rem;
+  left: 5rem;
+  position: absolute;
+  top: 5rem;
+  padding: 2rem;
+  border: 2px solid rgb(124, 123, 123);
+  border-radius: 3rem;
+  background-color: rgba(8, 31, 77, 0.5);
+} */
+
+.container {
+  display: block;
+  width: 96rem;
+  height: 46rem;
+  left: 10.5rem;
+  position: absolute;
+  top: 10.5rem;
+  padding: 2rem;
+  /* border-radius: 3rem; */
+  background-color: black;
+}
+
+.main-page {
+  display: none;
+}
+
+.buy-container-main {
+  display: none;
+  width: 85rem;
+  height: 32rem;
+  left: 18rem;
+  position: absolute;
+  top: 13rem;
+  padding: 3rem;
+  border: 2px solid rgb(124, 123, 123);
+  border-radius: 3rem;
+  /* background-color: rgb(140, 109, 196); */
+  background-image: linear-gradient(to right, rgb(55, 96, 150), rgb(61, 52, 75));
+}
+
+.buy-conatainer {
+  overflow: scroll;
+  width: 87rem;
+  height: 26rem;
+  left: 0rem;
+  position: absolute;
+  top: 6rem;
+  padding: 2rem;
+  border-radius: 3rem 0rem 3rem 3rem;
+  /* background-image: linear-gradient(to right, rgb(7, 41, 85), rgb(19, 24, 73)); */
+}
+
+.slider {
+  display: none;
+  position: absolute;
+  width: 8rem;
+  height: 54rem;
+  left: 5.1rem;
+  top: 5.1rem;
+  background-image: linear-gradient(to top, rgb(5, 31, 65), rgb(12, 12, 12));
+  border-bottom-left-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 0rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0.5rem 1rem;
+}
+
+.slider-header {
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 1.7rem;
+  width: 9.5rem;
+}
+
+.slider-hr {
+  width: 6rem;
+  background-color: rgb(82, 80, 80);
+  box-shadow: rgba(224, 219, 219, 0.5) 15px 0rem 1rem;
+  height: 2px;
+  left: 1rem;
+  top: 4rem;
+  border: 0px;
+  position: absolute;
+}
+
+.buy-history-hr {
+  width: 57rem;
+  background-color: rgb(82, 80, 80);
+  height: 2px;
+  border: 0px;
+  position: absolute;
+}
+
+.user-info-conainer {
+  display: none;
+  width: 15rem;
+  height: 4rem;
+  left: 39rem;
+  position: absolute;
+  top: 0.5rem;
+  padding: 2rem;
+  background-image: linear-gradient(to right, rgb(7, 41, 85), rgb(35, 45, 134));
+  /* background-image: url("/images/i142-dl-gas-station.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 1rem;
+}
+
+.user-hello {
+  color: gray;
+  font-family: Akrobat-Bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.user-name {
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.8rem;
+}
+
+.user-bank {
+  color: white;
+  position: absolute;
+  top: 2.3rem;
+  left: 1rem;
+  font-size: 0.8rem;
+}
+
+.user-cash {
+  color: white;
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  word-spacing: 1px;
+}
+
+.buy-hr {
+  width: 49rem;
+  left: -1rem;
+  background-color: rgb(82, 80, 80);
+  height: 2px;
+  border: 0px;
+  position: absolute;
+}
+
+.fa-home {
+  color: white;
+  width: 2rem;
+  text-align: center;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 2px 1px;
+  /* background-color: rgb(14, 89, 112); */
+}
+
+.dashboard-text {
+  position: absolute;
+  top: 6rem;
+  left: 2.8rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.fa-home:hover {
+  cursor: pointer;
+  color: rgb(14, 89, 112);
+}
+
+.usertext {
+  position: absolute;
+  top: 10rem;
+  left: 3.2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.usertext:hover {
+  cursor: pointer;
+  color: rgb(14, 89, 112);
+}
+.graficimg{
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+}
+
+.graftext{
+  color: white;
+  position: absolute;
+  top: 10rem;
+  z-index: 1;
+  left: 14rem;
+}
+
+.last-buy {
+  display: block;
+  color: white;
+  width: 34rem;
+  height: 36.9rem;
+  top: 20.1rem;
+  /* border-radius: 1rem 1rem 0rem 0rem; */
+  left: 12.8rem;
+  position: absolute;
+  /* background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65)); */
+  overflow: hidden scroll;
+}
+
+.lastbuyheader{
+  color: #009D3E;
+  top: 19.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left:22rem;
+}
+
+.empheader{
+  color: rgb(22, 197, 22);
+  top: 17rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  left:80rem;
+}
+
+::-webkit-scrollbar {
+  /* background-color: rgb(64, 36, 163); */
+  width: 4px;
+}
+
+
+
+thead {
+  position: absolute;
+  top: 2rem;
+}
+
+.header {
+  left: 2rem;
+  top: 1rem;
+  color: white;
+  position: absolute;
+}
+
+.alt {
+  top: 2.5rem !important;
+  color: gray;
+  font-size: 10px;
+}
+
+table {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: white;
+  margin-left: 0px;
+}
+
+th {
+  color: rgb(116, 111, 111);
+}
+
+td {
+  padding: 20px;
+}
+
+#gas {
+  position: absolute;
+  left: 25rem;
+  width: 4.5rem;
+  top: 0.4rem;
+  font-size: 13px;
+}
+
+#vehicle-model {
+  position: absolute;
+  left: 12rem;
+  width: 6.5rem;
+  top: 0.4rem;
+  font-size: 13px;
+
+}
+
+#price-hst{
+  position: absolute;
+  left: 20rem;
+  top: 0.4rem;
+  width: 4.5rem;
+  font-size: 13px;
+}
+
+#price {
+  position: absolute;
+  left: 35.5rem;
+  top: 0rem;
+  width: 4.5rem;
+  font-size: 13px;
+}
+
+#owner {
+  position: absolute;
+  left: 22rem;
+  width: 4.5rem;
+}
+
+#buy-button {
+  position: absolute;
+  left: 45rem;
+  width: 4.5rem;
+}
+
+#date {
+  position: absolute;
+  left: 6rem;
+  top: 0rem;
+  font-size: 13px;
+  top: 0.4rem;
+  width: 4.5rem;
+}
+
+#user {
+  position: absolute;
+  left: -2rem;
+  top: 0rem;
+  font-size: 13px;
+  top: 0.4rem;
+  width: 5.5rem;
+}
+
+#name {
+  position: absolute;
+  left: 12rem;
+  width: 4.5rem;
+}
+
+.buy-price-td {
+  color: white;
+  position: relative;
+  left: 5rem;
+  top: 6rem;
+  width: 4.5rem;
+}
+
+.gas-td {
+  position: relative;
+  left: 28rem;
+  top: 3rem;
+  width: 4.5rem;
+}
+
+.price-td {
+  position: relative;
+  left: 0rem;
+  top: 6rem;
+  width: 4.5rem;
+}
+
+.fuel-td {
+  position: relative;
+  left: 16.5rem;
+  top: 6rem;
+  width: 4.5rem;
+}
+
+.owner-td {
+  color: white;
+  position: relative;
+  left: 4rem;
+  top: 3rem;
+  width: 11rem;
+}
+
+.date-td {
+  position: relative;
+  left: -2rem;
+  top: 6rem;
+  width: 4.5rem;
+}
+
+.vehicle-td {
+  position: relative;
+  left: -1rem;
+  top: 6rem;
+  width: 4.5rem;
+}
+
+.name-td {
+  color: white;
+  position: relative;
+  left: 4.5rem;
+  top: 3rem;
+  width: 8rem;
+}
+
+.id-td {
+  color: white;
+  position: relative;
+  left: 2rem;
+  top: 3rem;
+  width: 4.5rem;
+}
+
+.user-td {
+  color: white;
+  position: relative;
+  left: -1rem;
+  top: 6rem;
+  font-size: 14px;
+  width:16.2rem;
+}
+
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+#container {
+  position: relative;
+  width: 5vh;
+  top: 0rem;
+  left:-19rem;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+input {
+  display: block;
+}
+
+label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: rgb(45, 43, 53);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  left: 20rem;
+  top: 7rem;
+}
+
+label div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(rgb(52, 105, 3) 35%, rgb(10, 172, 4));
+  height: 100%;
+  width: 0%;
+  animation: 2s ease 0s 1 normal forwards running grow;
+  box-shadow: rgb(95, 204, 45) 0px 0px 8px 1px inset;
+}
+
+label div::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/172299/bubbles-mask.gif");
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+span {
+  display: inline-block;
+  color: rgb(251, 251, 251);
+  font-size: 1.3rem;
+  left: 20rem;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 5rem;
+}
+
+span:last-child {
+  float: right;
+}
+
+.order {
+  display: block;
+  position: absolute;
+  width: 34rem;
+  height:9rem;
+  top: 33rem;
+  left: 3rem;
+  /* border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; */
+  border-radius: 1rem;
+  /* background-image: linear-gradient(to right, rgb(2, 25, 54), rgb(4, 5, 65)); */
+}
+
+.user-info-cont{
+  position: absolute;
+  width: 32rem;
+  height:10rem;
+  top: 33rem;
+  left: 4rem;
+  /* border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; */
+  overflow: hidden;
+  /* background-color: white; */
+  /* border-radius: 1rem; */
+  /* background-image: linear-gradient(to right, rgb(2, 25, 54), rgb(4, 5, 65)); */
+}
+
+.user-info-name {
+  position: absolute;
+  color: white;
+  left: 0rem;
+  top: 3rem;
+}
+
+.user-info-name a{
+  position: absolute;
+  left: 26rem;
+  width: 6rem;
+}
+
+.user-info-bank {
+  position: absolute;
+  color: white;
+  left: 0rem;
+  top: 5rem;
+}
+.user-info-bank a {
+  position: absolute;
+  left: 29rem;
+  width: 6rem;
+}
+
+.user-ino-cash {
+  color: white;
+  position: absolute;
+  left: 0rem;
+  top: 7rem;
+}
+
+.user-ino-cash a{
+  position: absolute;
+  left: 29rem;
+  width: 6rem;
+}
+
+
+.user-total{
+  color: white;
+  position: absolute;
+  left: 0rem;
+  top: 9rem;
+}
+
+.user-total a{
+  color: white;
+  position: absolute;
+  left: 28rem;
+  width: 6rem;
+}
+
+
+
+.desc-header {
+  display: none;
+  position: absolute;
+  top: 34rem;
+  left: 76rem;
+  color: gray;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.desc-header-alt {
+  top: 37.4rem;
+  color: gray;
+  font-size: 0.6rem;
+}
+
+fa-money {
+  position: absolute;
+  top: 38.1rem;
+  left: 79rem;
+}
+
+#test{
+  position: absolute;
+  left: 27rem;
+  width: 6rem;
+}
+
+.finance {
+  position: absolute;
+  top: 34.1rem;
+  left: 4rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.totalprice {
+  top: 39.3rem;
+  left: 76rem;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.todayprice {
+  top: 44.1rem;
+  left: 79rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.litre {
+  top: 47.1rem;
+  left: 79rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gasstation-border {
+  width: 40rem;
+  height: 5rem;
+  top: 50rem;
+  border-radius: 5rem;
+  position: absolute;
+  left: 30rem;
+  border-image: linear-gradient(red, rgba(0, 0, 0, 0)) 1 100% / 1 / 0 stretch;
+  background-image: linear-gradient(rgb(48, 64, 117), rgb(15, 115, 139));
+}
+
+.border-text {
+  position: absolute;
+  top: 51rem;
+  left: 36.5rem;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 100;
+}
+
+.dash-text {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  color: grey;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.dash {
+  left: 6rem;
+  color: white !important;
+}
+
+.dash-big {
+  top: 2rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.todas-money {
+  color: white;
+  width: 17rem;
+  height: 3.5rem;
+  top: 4.1rem;
+  border-radius: 1rem;
+  left: 10.8rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+.todas-user {
+  color: white;
+  width: 17rem;
+  height: 3.5rem;
+  top: 4.1rem;
+  border-radius: 1rem;
+  left: 30.8rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+.todas-gas {
+  color: white;
+  width: 17rem;
+  height: 3.5rem;
+  top: 4.1rem;
+  border-radius: 1rem;
+  left: 50.8rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+.withdraw-money{
+  color: white;
+  width: 12rem;
+  height: 4.5rem;
+  top: 3.1rem;
+  border-radius: 1rem;
+  left: 69.5rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+
+
+
+.withdraw-text{
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  color: gray;
+  font-size: 12px;
+}
+
+
+.withdraw-button {
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  color: white;
+  width: 6rem;
+  height: 1.4rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgb(6, 6, 95);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  /* transition-delay: 1s; */
+  transition-duration: 1s;
+}
+.withdraw-button:hover {
+  background-color: rgb(5, 37, 78);
+}
+
+.name-change {
+  color: white;
+  width: 12rem;
+  height: 4.5rem;
+  top: 3.1rem;
+  border-radius: 1rem;
+  left: 83rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+.name-change-button{
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  color: white;
+  width: 6rem;
+  height: 1.4rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgb(6, 6, 95);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  /* transition-delay: 1s; */
+  transition-duration: 1s;
+}
+
+#name-input{
+  position: absolute;
+  left: 2rem;
+  top:0.5rem
+}
+
+
+
+
+
+
+.todas-total {
+  color: white;
+  width: 17rem;
+  height: 3.5rem;
+  top: 4.1rem;
+  border-radius: 1rem;
+  left: 72.8rem;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+  overflow: hidden scroll;
+}
+
+.station-name {
+  color: white;
+  width: 17rem;
+  height: 3.5rem;
+  top: 0.3rem;
+  border-radius: 1rem;
+  left: 81.8rem;
+  overflow: hidden;
+  position: absolute;
+  background-image: linear-gradient(to right, rgb(0, 16, 37), rgb(4, 5, 65));
+}
+
+.station-header {
+  position: absolute;
+  left: 6rem;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  height: 1rem;
+  position: absolute;
+  left: 4rem;
+  top: 1.5rem;
+  padding: 2px 30px;
+  margin: 2px 0px;
+  display: inline-block;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(76, 175, 80);
+  color: rgb(250, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(69, 160, 73);
+}
+
+.today-header {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  color: gray;
+  font-size: 12px;
+}
+
+.price {
+  top: 1.5rem;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.money-icon {
+  left: 13.2rem;
+  top: 0.3rem;
+  vertical-align: sub;
+  text-align: center;
+  background-color: rgb(14, 83, 148);
+  border-radius: 15px;
+  width: 2rem;
+  padding: 8px;
+  font-size: 25px !important;
+  height: 2rem;
+  position: absolute;
+}
+
+.fa-wallet {
+  left: 13.2rem;
+  top: 0.3rem;
+  vertical-align: sub;
+  text-align: center;
+  background-color: rgb(14, 83, 148);
+  border-radius: 15px;
+  width: 2rem;
+  padding: 8px;
+  font-size: 35px;
+  height: 2rem;
+  position: absolute;
+}
+
+
+.fa-globe {
+  left: 13.2rem;
+  top: 0.3rem;
+  vertical-align: sub;
+  text-align: center;
+  background-color: rgb(14, 83, 148);
+  border-radius: 15px;
+  width: 2rem;
+  padding: 8px;
+  height: 2rem;
+  position: absolute;
+  font-size: 30px !important;
+}
+
+.fa-ship {
+  left: 13.2rem;
+  top: 0.3rem;
+  vertical-align: sub;
+  text-align: center;
+  background-color: rgb(14, 83, 148);
+  border-radius: 15px;
+  width: 2rem;
+  padding: 8px 10px;
+  height: 2rem;
+  position: absolute;
+  font-size: 30px !important;
+}
+
+.fa-file-invoice {
+  left: 13.2rem;
+  top: 0.3rem;
+  vertical-align: sub;
+  text-align: center;
+  background-color: rgb(14, 83, 148);
+  border-radius: 15px;
+  width: 2rem;
+  padding: 8px 10px;
+  height: 2rem;
+  position: absolute;
+  font-size: 30px !important;
+}
+
+.radial-cont {
+  width: 30rem;
+  height: 40rem;
+  left: 66rem;
+  top: 10rem;
+  position: absolute;
+  /* background-color: black; */
+  /* background-image: linear-gradient(to right, rgb(5, 16, 70), rgb(5, 8, 46)); */
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.radial-header {
+  position: absolute;
+  top: 0rem;
+  left: 12rem;
+  color: white;
+}
+
+.radial-cont .level25{
+  background-color: #1f1e1e;
+  left: 5rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.radial-cont .level25text{
+  color: gray;
+  left: 6.6rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+
+.radial-cont .level50{
+  background-color: #1f1e1e;
+  left: 11rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.radial-cont .level50text{
+  color: gray;
+  left: 12.6rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.radial-cont .level75{
+  background-color: #1f1e1e;
+  left: 17rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.radial-cont .level75text{
+  color: gray;
+  left: 18.6rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.radial-cont .level100{
+  background-color: #1f1e1e;
+  left: 23rem;
+  top: 5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.radial-cont .level100text{
+  color: gray;
+  left: 24.4rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.radial-cont .levelupdatebutton{
+  background-color: #1f1e1e;
+  left: 17rem;
+  top: 11rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 11rem;
+  height: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.radial-cont .levelupdatebuttontext{
+  color: gray;
+  left: 21rem;
+  position: absolute;
+  font-weight: bold;
+  top: 12.5rem;
+  font-size: 1.5rem;
+}
+
+.fillupdatepriceheader{
+  color: rgb(187, 184, 184);
+  top: 20rem;
+  left: 9rem;
+  font-size: 0.8rem;
+  position: absolute;
+}
+
+.updatepriceback{
+  width: 21rem;
+  height: 4rem;
+  /* border-radius: 1rem; */
+  top: 21.5rem;
+  position: absolute;
+  left: 6rem;
+  /* background-color: #1f1c1f; */
+ background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(38, 38, 43)); 
+}
+.updatepricemoney{
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 1rem;
+  position: absolute;
+  left: 1rem;
+}
+.updatepricedolar{
+  color: gray;
+  font-size: 2rem;
+  left: 18rem;
+  top: 0.5rem;
+  position: absolute;
+}
+
+
+.tankerlimit{
+  background-color:#00952e;
+  width: 20rem;
+  height: 3rem;
+  /* border-radius: 1rem; */
+  margin-top: 1rem;
+  position: relative;
+  left: 7rem;
+  top: 30rem;
+}
+.tankerlimit .limittext{
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  position: absolute;
+  left: 5.5rem;
+  top: 1rem;
+}
+
+.levelupdatebutton:hover{
+  background-color: green;
+}
+
+.radial-cont  .levelinfobutton{
+  background-color: #1f1e1e;
+  left: 5rem;
+  top: 11rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 11rem;
+  height: 5rem;
+}
+
+.radial-cont  .levelinfobuttontext{
+  color: gray;
+  left: 7rem;
+  width: 10.5rem;
+  position: absolute;
+  font-weight: bold;
+  top: 12.5rem;
+  font-size: 1rem;
+}
+
+
+.radial-onebox {
+  position: absolute;
+  width: 13rem;
+  height: 4rem;
+  left: 2rem;
+  top: 5rem;
+  border-radius: 1rem;
+  background-color: rgb(3, 2, 44);
+}
+
+.radial-twobox {
+  position: absolute;
+  width: 13rem;
+  height: 4rem;
+  left: 2rem;
+  top: 12rem;
+  border-radius: 1rem;
+  background-color: rgb(3, 2, 44);
+}
+
+.radialtext {
+  color: rgb(175, 171, 171);
+  font-size: 13px;
+  left: 1rem;
+  top: 0.3rem;
+  position: absolute;
+}
+
+.radial-usernumber {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  left: 1rem;
+  top: 1.5rem;
+  position: absolute;
+}
+
+.station-updated {
+  width: 30rem;
+  height: 40rem;
+  left: 34rem;
+  top: 10rem;
+  position: absolute;
+  border-radius: 1rem;
+  /* background-image: linear-gradient(to right, rgb(3, 10, 48), rgb(3, 7, 66)); */
+}
+
+.station-updated .priceinfohr{
+  border: 0; 
+  border-top: 7px solid #009D3E;
+  top: 30rem;
+  transform: rotate(90deg);
+  width: 4rem;
+  position: absolute;
+  left: 3.5rem;
+}
+.station-updated .withtext{
+  color: rgb(182, 179, 179);
+  position: absolute;
+  top: 29rem;
+  width:16rem;
+  left: 6.5rem;
+}
+
+.station-updated .tankerheader{
+  color: white;
+  position: absolute;
+  left:10rem;
+  /* top: 1.5rem; */
+}
+
+.station-updated .withtext .withprice{
+  color: white;
+  left: 17rem;
+  top: 0rem;
+  font-size: 1.5rem;
+  position: absolute;
+  
+}
+
+.station-updated  .levelinfobutton{
+  background-color: #1f1e1e;
+  left: 5rem;
+  top: 11rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 11rem;
+  height: 5rem;
+}
+
+.station-updated  .levelinfobuttontext{
+  color: gray;
+  left: 6rem;
+  width: 10.5rem;
+  position: absolute;
+  font-weight: bold;
+  top: 12.5rem;
+  font-size: 0.9rem;
+}
+
+.station-updated .levelupdatebutton{
+  background-color: #1f1e1e;
+  left: 17rem;
+  top: 11rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 11rem;
+  height: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.station-updated  .levelupdatebuttontext{
+  color: gray;
+  left: 20rem;
+  position: absolute;
+  font-weight: bold;
+  top: 12.5rem;
+  font-size: 1.5rem;
+}
+
+.station-updated  .levelupdatebutton:hover{
+  background-color: green;
+}
+
+
+
+.station-updated .level25{
+  background-color: #1f1e1e;
+  left: 5rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.station-updated .level25text{
+  color: gray;
+  left: 7rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+
+.station-updated .level50{
+  background-color: #1f1e1e;
+  left: 11rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.station-updated .level50text{
+  color: gray;
+  left: 13rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.station-updated .level75{
+  background-color: #1f1e1e;
+  left: 17rem;
+  top: 5rem;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.station-updated .level75text{
+  color: gray;
+  left: 19rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.station-updated .level100{
+  background-color: #1f1e1e;
+  left: 23rem;
+  top: 5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+.station-updated .level100text{
+  color: gray;
+  left: 25rem;
+  position: absolute;
+  font-weight: bold;
+  top: 6.5rem;
+  font-size: 1.5rem;
+}
+
+.update-data {
+  width: 16rem;
+  height: 5rem;
+  left: 7rem;
+  top: 15rem;
+  position: absolute;
+  border-radius: 1rem;
+  background-color: rgb(5, 2, 37);
+  cursor: pointer;
+}
+
+.update-data:hover {
+  background-color: rgb(11, 5, 78);
+}
+
+.desc-data {
+  width: 13rem;
+  height: 4rem;
+  left: 2rem;
+  top: 5rem;
+  position: absolute;
+  border-radius: 1rem;
+  background-color: rgb(5, 2, 37);
+}
+
+.time-data {
+  width: 13rem;
+  height: 4rem;
+  left: 16rem;
+  top: 5rem;
+  position: absolute;
+  border-radius: 1rem;
+  background-color: rgb(5, 2, 37);
+}
+
+.desc-limit {
+  color: rgb(139, 136, 136);
+  font-size: 20px;
+  font-weight: bold;
+  left: 1rem;
+  top: 0.5rem;
+  position: absolute;
+}
+
+.desc-number {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  left: 1rem;
+  top: 2rem;
+  position: absolute;
+}
+
+.update-level {
+  cursor: pointer;
+  color: white;
+  font-size: 23px;
+  left: 3.3rem;
+  top: 1.3rem;
+  position: absolute;
+}
+
+.welcome-container {
+  width: 20rem;
+  height: 10rem;
+  left: 10rem;
+  top: 10rem;
+  position: absolute;
+  background-image: url("/images/i142-dl-gas-station.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 1rem;
+  transition-duration: 1s;
+}
+
+.welcome-container:hover {
+  opacity: 0.3;
+}
+
+.tanker-conatainer {
+  width: 20rem;
+  height: 10rem;
+  left: 10rem;
+  top: 22rem;
+  position: absolute;
+  background-image: url("/images/tanker.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 1rem;
+  transition-duration: 1s;
+  /* transition-delay: 0.5s; */
+}
+
+.tanker-conatainer:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#tanker-header {
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+  color: white;
+  font-size: 15px;
+}
+
+.welcome-header {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  color: gray;
+  font-size: 15px;
+}
+
+.welcome-name {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 25px;
+}
+
+.welcome-message {
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 15px;
+}
+
+.zero {
+  color: rgb(139, 136, 136);
+  font-size: 13px;
+  left: 1rem;
+  top: 1.3rem;
+  position: absolute;
+}
+
+.hundred {
+  color: rgb(139, 136, 136);
+  font-size: 13px;
+  left: 13.5rem;
+  top: 1.3rem;
+  position: absolute;
+}
+
+.station-desc {
+  color: rgb(139, 136, 136);
+  font-size: 13px;
+  left: 1.5rem;
+  top: 3.3rem;
+  position: absolute;
+}
+
+.update-text {
+  color: rgb(175, 171, 171);
+  font-size: 13px;
+  left: 2rem;
+  top: 3.3rem;
+  position: absolute;
+}
+
+.station-updated-header {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 22px;
+}
+
+@keyframes growProgressBar {
+
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+:root {
+  --value: 40;
+}
+
+div[role="progressbar"] {
+  --size: 8rem;
+  
+  --fg: #009D3E;
+  --bg: #333232;
+  --ag: white;
+  --pgPercentage: var(--value);
+  animation: 3s ease 0s 1 normal forwards running growProgressBar;
+  width: var(--size);
+  left: 12rem;
+  top: 18rem;
+  position: absolute;
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, #242425 80%, transparent 0 99.9%, transparent 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--ag);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+
+.button {
+  background-color: rgb(76, 175, 80);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  left: 14rem;
+  top: 6.5rem;
+  border-radius: 15px;
+  position: relative;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: transparent;
+  color: black;
+}
+
+.button2 {
+  left: 7rem;
+  top: 3.3rem;
+  background-color: rgb(1, 0, 81);
+}
+
+.button2:hover {
+  background-color: rgb(22, 3, 77);
+  color: white;
+}
+
+.button1:hover {
+  background-color: rgb(22, 3, 77);
+  color: white;
+}
+
+
+.employee-header {
+  color: white;
+  position: absolute;
+  top: -12rem;
+  left: rem;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.category-text {
+  color: white;
+  position: absolute;
+  top: -4rem;
+  left: 2rem;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+.admin-png{
+  position: absolute;
+  top: -6rem;
+  left: 1rem;
+  width: 3rem;
+  color: white;
+}
+
+.employe-hr{
+  position: absolute;
+  top: -4.5rem;
+  left: 10rem;
+  width: 40rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.employe-text{
+  color: white;
+  position: absolute;
+  top: -5rem;
+  left: 5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.category-button {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 0.5;
+  border: 0.5px solid rgba(255, 255, 255, 0.21);
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin: 6px 32px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-family: 'Akrobat-Semi-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+}
+
+.category-button:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(255, 255, 255, 0.25);
+  color: black;
+}
+
+
+.employe-button {
+  position: absolute;
+  left: 50.5rem;
+  top: -6rem;
+  width: 9rem;
+}
+
+.hire-button{
+  position: absolute;
+  left: 61rem;
+  top: -6rem;
+  width: 6rem;
+}
+
+.employee-list-header {
+  color: #a5a5aa;
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  font-size: 15px;
+}
+
+.fire-list-header {
+  color: #a5a5aa;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  font-size: 15px;
+}
+
+
+.employee-container {
+  width: 10rem;
+  height: 13rem;
+  left: 20rem;
+  top: 16rem;
+  position: absolute;
+  background-color: wheat;
+  position: absolute;
+}
+
+
+.card-image {
+  /* background-image: url("../images/employe.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9
+}
+
+.hire-image{
+  /* background-image: url("../images/fire.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9
+}
+
+.card {
+    /* background: rgba(255, 255, 255, 0.05); */
+    float: left;
+    left: 2rem;
+    top: 1rem;
+    margin-top: 1rem;
+    width: 3800px;
+    margin-left: 1rem;
+    /* margin-top: 8rem; */
+    position: relative;
+    height: 330px;
+
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #170735;
+    overflow: hidden;
+    /* border: 0.5px solid rgba(255, 255, 255, 0.21); */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 46px -4px rgb(0 0 0 / 60%);
+
+}
+
+#hire-card{
+  display: none;
+}
+
+.hire::-webkit-scrollbar-thumb {
+  background-color: #010051;
+  border-radius: 10px;
+}
+
+.hire-card {
+  /* background: rgba(255, 255, 255, 0.05); */
+  background-image: url("../images/fire.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center center;
+  float: left;
+  top: 0rem;
+  margin-top: 1rem;
+  width: 203px;
+  margin-left: 1rem;
+  /* margin-top: 8rem; */
+  position: relative;
+  height: 333px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(255, 255, 255, 0.21);
+}
+
+
+.hire-box {
+  background-image: linear-gradient(315deg, #6d628b 0%, #443a7e 74%);
+  width: 203px;
+  height: 10rem;
+  top: 16rem;
+  border-radius: 1rem;
+  position: absolute;
+}
+
+.card-box {
+  width: 243px;
+  background-color: rgb(29 87 173 / 50%);
+  height: 6rem;
+  top: 17rem;
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 196, 202);
+  border-radius: 5px;
+}
+
+
+.buy-conatainer::-webkit-scrollbar-thumb {
+  background: rgb(196, 196, 202);
+  border-radius: 5px;
+}
+
+
+
+.buy-container-text {
+  font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Akrobat-Bold';
+    color: black;
+    position: relative;
+    margin-left: 1rem;
+    padding: 10px 0px;
+    width: 150px;
+    cursor: pointer;
+    /* right: 3.3rem; */
+    left: -0.1rem;
+    top: 16rem;
+    border-radius: 1rem;
+    text-align: center;
+    /* border-radius: 0.3rem; */
+    /* border-top-right-radius: 1rem; */
+    /* background: rgba(255, 255, 255, 0.17); */
+    /* background-image: linear-gradient(to right, #363536 0%, transparent 74%); */
+    transition-duration: 1s;
+}
+
+.buy-container-text:hover {
+  color: rgba(56, 56, 59, 0.7);
+}
+
+.product-name {
+  position: absolute;
+  width: 200px;
+  height: 39px;
+  left: -0.7rem;
+  top: 5rem;
+  /* font-family: 'Akrobat-Bold',sans-serif; */
+  /* font-style: normal; */
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.authority {
+  position: absolute;
+    width: 300px;
+    height: 19px;
+    left: -4rem;
+    top: 12rem;
+    font-family: 'Akrobat-Bold';
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-border {
+  position: relative;
+  top: 8rem;
+  left: 6.5rem;
+  width: 65px;
+  height: 26px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.product-price {
+  position: relative;
+  width: 39px;
+  height: 17px;
+  left: 7.7rem;
+  top: 6.7rem;
+  font-family: 'Akrobat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.employee-add {
+  position: absolute;
+  left: 20rem;
+  top: 20rem;
+  overflow-x: scroll;
+  height: 50%;
+  width: 80rem;
+  /* background-color: #000000; */
+}
+
+.employee-add::-webkit-scrollbar-thumb  {
+  background: #010051;
+}
+
+.hire {
+  position: absolute;
+  left: 15rem;
+  top: 22rem;
+  overflow-y:hidden;
+  height: 45%;
+  width: 86rem;
+}
+
+.employee-cont {
+  position: absolute;
+  height: 37rem;
+  width: 90rem;
+  top: 19rem;
+  left: 15rem;
+  border-radius: 3rem;
+  opacity: 1;
+  /* background-image: linear-gradient(to right, rgb(3, 28, 61), rgba(0, 1, 2, 0.5)); */
+}
+
+.fire-cont {
+  position: absolute;
+  height: 37rem;
+  width: 50rem;
+  top: 13rem;
+  left: 55rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(to right, rgb(6, 35, 71), rgb(2, 6, 41));
+}
+
+#emp {
+  display: none;
+}
+
+#newpage{
+  display: block;
+}
+
+.employe-main{
+  display: block;
+}
+
+
+.employe-image {
+  position: absolute;
+  top: 6.5rem;
+  left: 13rem;
+  width: 93.5rem;
+  height: 50.2rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  opacity: 0.1;
+  /* background-image: transparent; */
+  /* background-image: url("../images/fire.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #10346a;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+  position: absolute;
+  left: 95rem;
+  top: 1rem;
+}
+
+.btn-close .icon-cross {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 40px;
+  left: 0rem;
+  height: 40px;
+}
+
+.btn-close .icon-cross:before,
+.btn-close .icon-cross:after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.btn-close .icon-cross:before {
+  transform: rotate(45deg);
+}
+
+.btn-close .icon-cross:after {
+  transform: rotate(-45deg);
+}
+
+.btn-close .icon-cross span {
+  display: block;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  transform: rotateZ(90deg);
+  background: #0052cc;
+}
+
+.cross-stand-alone {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.cross-stand-alone:before,
+.cross-stand-alone:after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #000;
+  border-radius: 4px;
+}
+
+.cross-stand-alone:before {
+  transform: rotate(45deg);
+}
+
+.cross-stand-alone:after {
+  transform: rotate(-45deg);
+}
+
+.cross-stand-alone span {
+  display: block;
+}
+
+.cross-1px {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.cross-1px:before,
+.cross-1px:after {
+  content: '';
+  position: absolute;
+  top: 39.5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+  border-radius: 1px;
+}
+
+.cross-1px:before {
+  transform: rotate(45deg);
+}
+
+.cross-1px:after {
+  transform: rotate(-45deg);
+}
+
+.cross-1px span {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  left: 15rem;
+}
+
+#frame {
+  position: absolute;
+  top: -4rem;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+.pricing-table {
+  position: absolute;
+  top: 50%;
+  margin-left: 22rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(black, 0.6);
+}
+.pricing-table .card {
+  border: white solid 4px;
+  border-radius: 5rem;
+  height: 370px;
+  padding: 30px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6); */
+  transition: all 0.2s ease-in-out;
+}
+.pricing-table .card {
+  background: #7f7fd5;
+  background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+
+
+
+.pricing-table .card .buy-gas-price::before {
+  content: "$20";
+}
+.pricing-table .card {
+  margin: 0 30px;
+  z-index: 2;
+  width: 250px;
+  height: 400px;
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+.pricing-table .card .buy-gas-price::before {
+  content: "$50";
+}
+.pricing-table .card {
+  background: #00b09b;
+  background: linear-gradient(to right, #b5bbab, #bda061);
+}
+.pricing-table .card .buy-gas-price::before {
+  content: "$100";
+}
+.pricing-table .card .buy-gas-price, .pricing-table .card .buy-gas-price {
+  font-size: 4rem;
+}
+.pricing-table .card .card-buy-button, .pricing-table .card .card-buy-button {
+  left: 7rem;
+  position: absolute;
+  width: 230px;
+  height: 170px;
+}
+.pricing-table .card .card-buy-button h3, .pricing-table .card .card-buy-button h3 {
+  top: 12%;
+  left: 10%;
+  font-size: 1rem;
+}
+.pricing-table .card .type {
+  margin-top: 30px;
+  width: 15rem;
+  position: absolute;
+  left: 2rem;
+  letter-spacing: 0.1rem;
+}
+.pricing-table .card .buy-gas-price {
+  /* font-size: 7.5rem; */
+  left: 0rem;
+  position: relative;
+  margin: 10px 0px 20px;
+  z-index: 2;
+}
+.pricing-table .card .buy-gas-price span {
+  font-size: 1.8rem;
+  position: absolute;
+  left: -15%;
+  top: -75%;
+}
+.pricing-table .card .buy-gas-price::before {
+  position: absolute;
+  content: "";
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 9.5rem;
+  z-index: -1;
+  right: -30%;
+  bottom: 15%;
+  text-shadow: 0 0 0px rgba(51, 55, 69, 0);
+  transition: all 1s ease-in-out;
+}
+.pricing-table .card .plan {
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+.pricing-table .card .plan::before, .pricing-table .card .plan::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 2px;
+  background: #fff;
+  bottom: 40%;
+  transition: all 0.2s ease-out;
+}
+.pricing-table .card .plan::before {
+  right: 100%;
+  transform: translate(-50%, -50%);
+}
+.pricing-table .card .plan::after {
+  right: -100%;
+  transform: translate(0%, -50%);
+}
+.pricing-table .card .details {
+  text-transform: capitalize;
+}
+.pricing-table .card .details li {
+  margin: 15px 0px;
+}
+.pricing-table .card .card-buy-button {
+  cursor: pointer;
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  top: 21.5rem;
+  background: #fff;
+  border-radius: 15%;
+  right: -34%;
+  bottom: -27%;
+  transition: all 0.4s ease-in-out;
+}
+.pricing-table .card .card-buy-button h3 {
+  text-shadow: 0 0 0;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  color: #333745;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+.pricing-table .card:hover {
+  transform: scale(1.02);
+}
+.pricing-table .card:hover .buy-gas-price::before {
+  -webkit-animation: text-hover 1s ease-in-out infinite normal;
+  animation: text-hover 1s ease-in-out infinite normal;
+  animation: text-hover 1s ease-in-out infinite normal;
+}
+.pricing-table .card:hover .plan::before {
+  right: 90%;
+}
+.pricing-table .card:hover .plan::after {
+  right: -90%;
+}
+.pricing-table .card:hover .card-buy-button {
+  width: 100%;
+  right: 0%;
+  left: 0rem;
+  border-radius: 0%;
+}
+.pricing-table .card:hover .card-buy-button h3 {
+  left: 53%;
+  transform: translate(-50%, 0%);
+}
+@keyframes text-hover {
+  0% {
+    right: -30%;
+  }
+  50% {
+    right: -37%;
+  }
+  100% {
+    right: -30%;
+  }
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+.employe-table {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-left: 24rem;
+}
+.employe-table .employe-card {
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid #170735;
+  border-radius: 2rem;
+  width: 220px;
+  height: 330px;
+  padding: 30px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6);
+}
+.employe-table .employe-card {
+  /* background: #7f7fd5;
+  background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5); */
+}
+.employe-table .employe-card .employe-price::before {
+  content: "$20";
+}
+.employe-table .employe-card {
+  margin: 0 30px;
+  z-index: 2;
+  width: 200px;
+  height: 300px;
+  /* background: #ff416c; */
+  /* background: linear-gradient(to right, #ff4b2b, #ff416c); */
+}
+.employe-table .employe-card .employe-price::before {
+  content: "$50";
+}
+.employe-table .employe-card {
+  /* background: #00b09b; */
+  background: linear-gradient(to right, #100f5c, #090b86);
+}
+.employe-table .employe-card .employe-price::before {
+  content: "$100";
+}
+.employe-table .employe-card .employe-price, .employe-table .employe-card .employe-price {
+  font-size: 2rem;
+}
+.employe-table .employe-card .employe-buy-button, .employe-table .employe-card .employe-buy-button {
+  width: 320px;
+  top: 19rem;
+  height: 50px;
+  color: #8a90d3;
+
+}
+
+.btn{
+  /* background-color: #ff416c; */
+  color: rgb(164, 151, 223);
+  left: 2rem;
+  position: absolute;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.employe-transer-button{
+  position: absolute;
+  top:16rem;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  width: 360px;
+  height: 50px;
+  background: rgb(25, 6, 92);
+  border-radius: 15%;
+  /* right: -34%; */
+  bottom: -27%;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover{
+  left: 6rem;
+}
+
+
+.employe-table .employe-card .employe-buy-button h3, .employe-table .employe-card .employe-buy-button h3 {
+  top: 12%;
+  left: 10%;
+  font-size: 1rem;
+}
+.employe-table .employe-card .employe-type {
+  color: rgb(167, 144, 223);
+  margin-top: 30px;
+  letter-spacing: 0.1rem;
+}
+.employe-table .employe-card .employe-price {
+  color: rgb(157, 142, 224);
+  font-size: 2rem;
+  position: relative;
+  font-weight: bold;
+  margin: 10px 0px 20px;
+  z-index: 2;
+}
+.employe-table .employe-card .employe-price span {
+  font-size: 1.8rem;
+  position: absolute;
+  left: -15%;
+  top: -4rem;
+}
+.employe-table .employe-card .employe-price::before {
+  position: absolute;
+  content: "";
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 9.5rem;
+  z-index: -1;
+  right: -30%;
+  bottom: 15%;
+  text-shadow: 0 0 0px rgba(51, 55, 69, 0);
+  transition: all 1s ease-in-out;
+}
+.employe-table .employe-card .employe-plan {
+  color: rgb(181, 176, 206);
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+.employe-table .employe-card .employe-plan::before, .employe-table .employe-card .employe-plan::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 2px;
+  /* background: #fff; */
+  bottom: 40%;
+  transition: all 0.2s ease-out;
+}
+.employe-table .employe-card .employe-plan::before {
+  right: 100%;
+  transform: translate(-50%, -50%);
+}
+.employe-table .employe-card .employe-plan::after {
+  right: -100%;
+  transform: translate(0%, -50%);
+}
+.employe-table .employe-card .employe-details {
+  color: rgb(190, 168, 168);
+  text-transform: capitalize;
+}
+.employe-table .employe-card .employe-details li {
+  margin: 15px 0px;
+}
+.employe-table .employe-card .employe-buy-button {
+  cursor: pointer;
+  position: absolute;
+  /* width: 250px; */
+  height: 60px;
+  background: rgb(25, 6, 92);
+  border-radius: 15%;
+  right: -34%;
+  bottom: -27%;
+  transition: all 0.4s ease-in-out;
+}
+.employe-table .employe-card .employe-buy-button h3 {
+  text-shadow: 0 0 0;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  color: #9da2cf;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+.employe-table .employe-card:hover {
+  transform: scale(1.02);
+}
+.employe-table .employe-card:hover .employe-price::before {
+  animation: text-hover 1s ease-in-out infinite normal;
+}
+.employe-table .employe-card:hover .employe-plan::before {
+  right: 90%;
+}
+.employe-table .employe-card:hover .employe-plan::after {
+  right: -90%;
+}
+.employe-table .employe-card:hover .employe-buy-button {
+  width: 100%;
+  right: 0%;
+  border-radius: 0%;
+  background: rgb(6, 2, 56);
+  color:#7075b6
+}
+
+
+.employe-table .employe-card:hover .employe-buy-button h3 {
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+@keyframes text-hover {
+  0% {
+    right: -30%;
+  }
+  50% {
+    right: -37%;
+  }
+  100% {
+    right: -30%;
+  }
+}
+
+.employeaddcont{
+  width: 26rem;
+  height: 3rem;
+  background-color: #009D3E;
+  position: absolute;
+  top: 20rem;
+  left: 53rem;
+}
+
+.employeaddcont .text{
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  top: 0.5rem;
+  left: 11rem;
+  position: absolute;
+}
+
+.firecont{
+  width: 25.75rem;
+  height: 3rem;
+  background-color: #009D3E;
+  position: absolute;
+  top: 20rem;
+  left: 82rem;
+}
+
+.firecont .text{
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  top: 0.5rem;
+  left: 11rem;
+  position: absolute;
+} 
+
+.hirelistcont .hirelistcart{
+  position: relative;
+  width: 26rem;
+  height: 3.5rem;
+  top: 0rem;
+  left:0rem;
+  background-color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.hirelistcont{
+  width: 26.3rem;
+  height: 35rem;
+  top: 23rem;
+  left: 53rem;
+  position: absolute;
+  overflow: hidden scroll;
+
+}
+
+.firelistcont{
+  width: 26rem;
+  height: 35rem;
+  top: 23rem;
+  left: 82rem;
+  position: absolute;
+  overflow: hidden scroll;
+
+}
+
+.firelistcont .firelistcart{
+  position: relative;
+  width: 26rem;
+  height: 3.5rem;
+  top:0rem;
+  left:0rem;
+  background-color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.hirelistcont .hirelistcart .hirename{
+  color: rgb(71, 71, 71);
+  text-transform: uppercase;
+  /* left: 8rem; */
+  top: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.hirelistcont .hirelistcart .artı{
+  color: gray;
+  font-size: 2rem;
+  top: 0.6rem;
+  left:24rem;
+  position: absolute;
+}
+
+.hirelistcont .hirelistcart hr{
+  /* top: rem; */
+  left: 0rem;
+  width: 25.9rem;
+  border:gray 1px solid;
+  position: absolute;
+}
+
+.hirelistcont .hirelistcart:hover{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.firelistcont .firelistcart .hirename{
+  color: rgb(71, 71, 71);
+  text-transform: uppercase;
+  /* left: 8rem; */
+  top: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.firelistcont .firelistcart .artı{
+  color: gray;
+  font-size: 2rem;
+  top:0.6rem;
+  left:24rem;
+  position: absolute;
+}
+
+.firelistcont .firelistcart hr{
+  /* top: rem; */
+  left: 0rem;
+  width: 25.9rem;
+  border:gray 1px solid;
+  position: absolute;
+}
+
+.firelistcont .firelistcart:hover{
+  background-color: black;
+}
+
+
+.homepagetext{
+  color: white;
+  position: absolute;
+  left: 60rem;
+  top: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.homepagetext:hover{
+  color: green;
+}
+
+.homepagetext hr{
+  display: block;
+  left: -1rem;
+  top: 1.5rem;
+  width: 7.5rem;
+  border:green 1px solid;
+  position: absolute;
+}
+
+.emppagetext{
+  color: white;
+  position: absolute;
+  left: 70rem;
+  top: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.emppagetext:hover{
+  color: green;
+}
+
+.emppagetext hr{
+  display: none;
+  left: -1rem;
+  top: 1.5rem;
+  width: 8.8rem;
+  border:green 1px solid;
+  position: absolute;
+}
+
+.fuelname{
+  color: #009D3E;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.fuelname:hover{
+  transform: scale(1.1);
+}
+
+.inputchange{
+ display: block;
+ position: absolute;
+ top: 3.5rem;
+ left: 0rem;
+ border-radius: 0.5rem;
+ text-transform: uppercase;
+ /* background-color: #1f1e1e; */
+ background-color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+ text-align: center;
+ height: 3rem;
+ z-index: 1;
+ color: #009D3E;
+ border: black;
+ outline: none;
+}
+
+.withchange{
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: 17rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  /* background-color: #1f1e1e; */
+  background-color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  height: 3rem;
+  width: 5rem;
+  z-index: 1;
+  color: #009D3E;
+  border: black;
+  outline: none;
+ }
+ 
+
+
+.changebutton{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 3.6rem;
+  left: 16.6rem;
+  background-color: #3b3a3a;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: none;
+}
+
+.changebutton:hover{
+  background-color: #5e5c5c;
+}
+
+.set{
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.set:hover{
+  transform: scale(1.1);
+}

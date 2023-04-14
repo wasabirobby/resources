@@ -1,0 +1,12 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+ALTER TABLE players
+  ADD  credits int(11) NOT NULL DEFAULT 0;
+
+
+
+ALTER TABLE player_vehicles
+    ADD  datefinish DATE NOT NULL DEFAULT '2025-06-01';
